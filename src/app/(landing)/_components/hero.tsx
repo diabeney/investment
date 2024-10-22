@@ -4,13 +4,13 @@ import { Button } from "@/shared/components/ui/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
 export default function HeroSection() {
   return (
-    <div className=" grid lg:grid-cols-2 place-items-center h-screen lg:max-h-[540px]">
+    <div className=" grid lg:grid-cols-2 place-items-center h-full lg:max-h-[600px]">
       <section className=" p-6">
-        <h1 className="  text-5xl lg:text-6xl font-bold">
+        <h1 className="  text-5xl lg:text-6xl mt-3 lg:mt-0 font-bold">
           Empowering your <span className=" text-secondary">financial</span>{" "}
           future.
         </h1>
-        <p className=" text-lg my-6">
+        <p className=" md:text-lg my-6">
           At Investico Inc., we are dedicated to helping you grow and protect
           your wealth. With personalized investment strategies and a commitment
           to delivering long-term value, we guide you on the path to financial
@@ -23,7 +23,7 @@ export default function HeroSection() {
           <Icon icon="solar:arrow-right-up-bold-duotone" className="ml-3" />
         </Button>
       </section>
-      <section className=" h-full w-full">
+      <section className=" h-[20rem] md:h-full w-full">
         <Image src={HeroImage} alt="hero" className=" h-full w-full" />
       </section>
     </div>

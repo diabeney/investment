@@ -63,7 +63,7 @@ export default function WhatWeDo() {
   return (
     <section className=" bg-white  py-16 px-6">
       <section className="text-black text-center">
-        <h2 className=" text-5xl lg:text-6xl mb-3 font-semibold">
+        <h2 className=" text-4xl lg:text-6xl mb-3 font-semibold">
           What <span className=" text-secondary">We Do</span>
         </h2>
         <p className=" font-lg mb-4 max-w-screen-sm mx-auto text-stone-800">
@@ -74,7 +74,7 @@ export default function WhatWeDo() {
       </section>
       <section className=" grid lg:grid-cols-3  py-6 gap-4">
         {whatWeDo.map((item) => (
-          <article key={item.id} className=" p-12 border bg-stone-50 ">
+          <article key={item.id} className=" p-2 md:p-12 border bg-stone-50 ">
             <div className=" p-5 mb-4 bg-stone-200 w-fit rounded-full">
               <Icon icon={item.icon} className=" w-12 h-12 text-secondary" />
             </div>

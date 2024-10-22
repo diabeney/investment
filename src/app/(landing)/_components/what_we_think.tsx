@@ -5,7 +5,7 @@ export default function WhatWeThink() {
         <h2 className=" text-3xl mb-6 font-semibold">
           Listen to what our experts have to say about investment planning
         </h2>
-        <p className=" text-xl">
+        <p className=" text-xl mb-4">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
           facere vero ad ducimus consequuntur, placeat eum provident praesentium
           sequi blanditiis.

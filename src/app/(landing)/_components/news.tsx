@@ -36,10 +36,10 @@ export default function NewsAndEvents() {
   return (
     <section className=" bg-black  py-16 px-6">
       <section className="text-white">
-        <h2 className=" text-5xl lg:text-6xl mb-3 font-semibold">
+        <h2 className=" text-4xl lg:text-6xl mb-3 font-semibold">
           News and <span className=" text-secondary">Events</span>
         </h2>
-        <p className=" font-lg mb-4 max-w-screen-sm text-stone-300">
+        <p className=" md:font-lg mb-4 max-w-screen-sm text-stone-300">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ab a
           totam labore temporibus quos maiores est laboriosam ipsum asperiores
           repellendus
