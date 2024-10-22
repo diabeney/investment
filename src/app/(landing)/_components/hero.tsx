@@ -4,7 +4,7 @@ import { Button } from "@/shared/components/ui/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
 export default function HeroSection() {
   return (
-    <div className=" grid lg:grid-cols-2 place-items-center h-full lg:max-h-[600px]">
+    <div className=" max-w-screen-2xl mx-auto grid lg:grid-cols-2 place-items-center h-full lg:max-h-[600px]">
       <section className=" p-6">
         <h1 className="  text-5xl lg:text-6xl mt-3 lg:mt-0 font-bold">
           Empowering your <span className=" text-secondary">financial</span>{" "}

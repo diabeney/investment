@@ -10,8 +10,8 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
   return (
-    <>
-      <header className=" hidden md:block sticky top-0 bg-white/80 backdrop-blur-md saturate-200 p-6 border-b">
+    <div className="sticky z-50 top-0 bg-white/80 backdrop-blur-md saturate-200">
+      <header className=" max-w-screen-2xl mx-auto hidden md:block  p-6 border-b">
         <nav className=" flex items-center gap-12">
           <div className=" font-bold">.logo</div>
           <ul className=" flex gap-4 font-semibold">
@@ -38,7 +38,7 @@ export default function Navbar() {
           </div>
         </nav>
       </header>
-      <div className="  block border-b md:hidden sticky top-0 bg-white">
+      <div className="  block border-b md:hidden sticky z-50 top-0 bg-white">
         <div className=" p-4 flex justify-between ">
           <section>.logo</section>
           <button
@@ -55,6 +55,6 @@ export default function Navbar() {
           <MobileNavbar isMenuOpen={menuOpen} closeMenuHandler={closeMenu} />
         )}
       </div>
-    </>
+    </div>
   );
 }

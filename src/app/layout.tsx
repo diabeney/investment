@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${WorkSans.variable} ${BricolageGrotesque.variable} max-w-screen-2xl mx-auto antialiased`}
+        className={`${WorkSans.variable} ${BricolageGrotesque.variable}  antialiased`}
       >
         <Navbar />
         {children}
