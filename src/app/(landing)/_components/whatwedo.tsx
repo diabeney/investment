@@ -64,7 +64,7 @@ export default function WhatWeDo() {
     <section className=" bg-white  py-16 px-6">
       <section className="text-black text-center">
         <h2 className=" text-5xl lg:text-6xl mb-3 font-semibold">
-          What We Do.
+          What <span className=" text-secondary">We Do</span>
         </h2>
         <p className=" font-lg mb-4 max-w-screen-sm mx-auto text-stone-800">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ab a

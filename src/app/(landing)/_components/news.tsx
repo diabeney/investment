@@ -37,7 +37,7 @@ export default function NewsAndEvents() {
     <section className=" bg-black  py-16 px-6">
       <section className="text-white">
         <h2 className=" text-5xl lg:text-6xl mb-3 font-semibold">
-          News and Events
+          News and <span className=" text-secondary">Events</span>
         </h2>
         <p className=" font-lg mb-4 max-w-screen-sm text-stone-300">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ab a
@@ -50,7 +50,7 @@ export default function NewsAndEvents() {
           <article key={item.id} className=" p-7 bg-secondary">
             <h3 className=" font-semibold text-xl mb-3">{item.title}</h3>
             <p className=" text-black line-clamp-4">{item.description}</p>
-            <Button className=" w-full mt-6 bg-black text-white">
+            <Button className=" w-full mt-6 hover:opacity-80 bg-black text-white">
               Read More
             </Button>
           </article>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Work_Sans, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import Navbar from "./(landing)/_components/navbar";
+import Footer from "./(landing)/_components/footer";
 const WorkSans = Work_Sans({
   subsets: ["latin"],
   variable: "--font-paragraph",
@@ -25,10 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${WorkSans.variable} ${BricolageGrotesque.variable} antialiased`}
+        className={`${WorkSans.variable} ${BricolageGrotesque.variable} max-w-screen-2xl mx-auto antialiased`}
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

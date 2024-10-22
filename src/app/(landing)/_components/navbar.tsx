@@ -11,7 +11,7 @@ export default function Navbar() {
   const closeMenu = () => setMenuOpen(false);
   return (
     <>
-      <header className=" hidden md:block p-6 border-b">
+      <header className=" hidden md:block sticky top-0 bg-white/80 backdrop-blur-md saturate-200 p-6 border-b">
         <nav className=" flex items-center gap-12">
           <div className=" font-bold">.logo</div>
           <ul className=" flex gap-4 font-semibold">
@@ -24,7 +24,7 @@ export default function Navbar() {
             })}
           </ul>
           <div className=" ml-auto flex gap-3 items-center">
-            <Button className=" px-6 py-2 bg-black text-white">
+            <Button className=" px-6 py-2 bg-black hover:opacity-80 text-white">
               Get started
             </Button>
             <Icon
@@ -43,7 +43,7 @@ export default function Navbar() {
           <section>.logo</section>
           <button
             onClick={() => setMenuOpen(true)}
-            className=" w-fit bg-stone-200 p-2 rounded-full"
+            className=" w-fit bg-stone-200 p-2 rounded-full hover:opacity-80"
           >
             <Icon
               icon="solar:hamburger-menu-line-duotone"
