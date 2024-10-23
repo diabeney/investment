@@ -39,9 +39,11 @@ const solutionsData = [
 export default function SolutionsPage() {
   const router = useRouter();
   return (
-    <div className=" p-10">
+    <div className=" p-4 md:p-10">
       <section className=" max-w-screen-lg mb-6">
-        <h1 className=" text-6xl font-bold mb-3">Our Investment Solutions</h1>
+        <h1 className=" text-3xl lg:text-6xl font-bold mb-3">
+          Our Investment Solutions
+        </h1>
         <p>
           Discover a comprehensive range of investment solutions tailored to
           meet your financial goals. From diverse asset classes to insightful
