@@ -4,7 +4,7 @@ import NewsAndEvents from "./_components/news";
 import WhatWeDo from "./_components/whatwedo";
 import WhatWeThink from "./_components/what_we_think";
 import MarketInsights from "./_components/market_insights";
-import FirstFooter from "./_components/first_footer";
+
 export default function Home() {
   return (
     <div>
@@ -21,7 +21,6 @@ export default function Home() {
       <WhatWeDo />
       <WhatWeThink />
       <MarketInsights />
-      <FirstFooter />
     </div>
   );
 }

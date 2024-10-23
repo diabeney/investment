@@ -5,10 +5,20 @@ import { Icon } from "@iconify/react";
 import { Button } from "@/shared/components/ui/button";
 import { useState } from "react";
 import MobileNavbar from "./mobile_navbar";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
+  const pathname = usePathname();
+  const isActive = (href: string) => {
+    if (href === "#") return false;
+    if (pathname === "/" && href === "/") return true;
+    return (
+      pathname.startsWith(href) &&
+      (pathname === href || pathname[href.length] === "/")
+    );
+  };
   return (
     <div className="sticky z-50 top-0 bg-white/80 backdrop-blur-md saturate-200">
       <header className=" max-w-screen-2xl mx-auto hidden md:block  p-6 border-b">
@@ -18,7 +28,16 @@ export default function Navbar() {
             {NavLinks.map((link) => {
               return (
                 <li key={link.label}>
-                  <Link href={link.href}>{link.label}</Link>
+                  <Link
+                    href={link.href}
+                    className={`${
+                      isActive(link.href)
+                        ? "text-secondary font-extrabold"
+                        : "text-primary"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               );
             })}
