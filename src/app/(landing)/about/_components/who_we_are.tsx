@@ -3,7 +3,7 @@ import InvestmentImage from "@/app/assets/investment.jpg";
 
 export default function AboutWhoWeAre() {
   return (
-    <div className=" p-4 lg:p-10">
+    <div className=" max-w-screen-2xl mx-auto p-4 lg:p-10">
       <span>
         <h3 className=" font-semibold">WHO WE ARE</h3>
         <span className=" h-1 w-10 bg-secondary block" />

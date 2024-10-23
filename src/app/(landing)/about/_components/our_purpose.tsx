@@ -70,7 +70,7 @@ const useMediaQuery = (query: string): boolean => {
 };
 
 export default function OurPurpose(): React.ReactElement {
-  const [activeTab, setActiveTab] = useState<string>("Investment access");
+  const [activeTab, setActiveTab] = useState<string>("Financial security");
   const isMobile = useMediaQuery("(max-width: 768px)");
   const tabs = Object.keys(contentData);
 
@@ -87,70 +87,72 @@ export default function OurPurpose(): React.ReactElement {
   };
 
   return (
-    <div className=" p-4 lg:p-12 bg-stone-100 ">
-      <span>
-        <h3 className=" font-semibold">WHAT WE DO</h3>
-        <span className=" h-1 w-10 bg-secondary block" />
-      </span>
-      <div className="flex flex-col md:flex-row min-h-screen py-6">
-        <nav className={`${isMobile ? "w-full overflow-x-auto" : "w-64"}`}>
-          <ul className={`${isMobile ? "flex space-x-4" : "space-y-2"}`}>
-            {tabs.map((item) => (
-              <li key={item} className={isMobile ? "flex-shrink-0" : ""}>
-                <button
-                  onClick={() => setActiveTab(item)}
-                  className={`whitespace-nowrap text-left py-2 rounded transition-colors ${
-                    activeTab === item
-                      ? " text-secondary font-semibold"
-                      : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
-                  }`}
-                >
-                  {item}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <main className="flex-1 lg:p-6">
-          <Card className="w-full mt-4 lg:mt-0 rounded-none">
-            <CardHeader className="flex flex-row items-center justify-between">
-              {isMobile && (
-                <div className="flex space-x-2">
-                  <Button variant="outline" size="icon" onClick={handlePrev}>
-                    <ChevronLeft className="h-4 w-4" />
-                    <span className="sr-only">Previous</span>
-                  </Button>
-                  <Button variant="outline" size="icon" onClick={handleNext}>
-                    <ChevronRight className="h-4 w-4" />
-                    <span className="sr-only">Next</span>
-                  </Button>
+    <div className="  bg-stone-100 ">
+      <div className="p-4 lg:p-12 max-w-screen-2xl mx-auto">
+        <span>
+          <h3 className=" font-semibold">WHAT WE DO</h3>
+          <span className=" h-1 w-10 bg-secondary block" />
+        </span>
+        <div className="flex flex-col md:flex-row py-6">
+          <nav className={`${isMobile ? "w-full overflow-x-auto" : "w-64"}`}>
+            <ul className={`${isMobile ? "flex space-x-4" : "space-y-2"}`}>
+              {tabs.map((item) => (
+                <li key={item} className={isMobile ? "flex-shrink-0" : ""}>
+                  <button
+                    onClick={() => setActiveTab(item)}
+                    className={`whitespace-nowrap text-left py-2 rounded transition-colors ${
+                      activeTab === item
+                        ? " text-secondary font-semibold"
+                        : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                    }`}
+                  >
+                    {item}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <main className="flex-1 lg:p-6">
+            <Card className="w-full mt-4 lg:mt-0 rounded-none">
+              <CardHeader className="flex flex-row items-center justify-between">
+                {isMobile && (
+                  <div className="flex space-x-2">
+                    <Button variant="outline" size="icon" onClick={handlePrev}>
+                      <ChevronLeft className="h-4 w-4" />
+                      <span className="sr-only">Previous</span>
+                    </Button>
+                    <Button variant="outline" size="icon" onClick={handleNext}>
+                      <ChevronRight className="h-4 w-4" />
+                      <span className="sr-only">Next</span>
+                    </Button>
+                  </div>
+                )}
+              </CardHeader>
+              <CardContent className="grid gap-6 md:grid-cols-2 ">
+                <div className=" h-[300px] md:h-[500px]">
+                  <Image
+                    src={contentData[activeTab].image}
+                    alt={contentData[activeTab].title}
+                    width={2000}
+                    height={2000}
+                    className="object-cover h-full w-full object-center"
+                  />
                 </div>
-              )}
-            </CardHeader>
-            <CardContent className="grid gap-6 md:grid-cols-2 ">
-              <div className=" h-[300px] md:h-[500px]">
-                <Image
-                  src={contentData[activeTab].image}
-                  alt={contentData[activeTab].title}
-                  width={2000}
-                  height={2000}
-                  className="object-cover h-full w-full object-center"
-                />
-              </div>
-              <div>
-                <h3 className=" text-2xl md:text-3xl font-semibold mb-6">
-                  {contentData[activeTab].title}
-                </h3>
-                <h3 className="text-lg font-semibold mb-2">
-                  {contentData[activeTab].subtitle}
-                </h3>
-                <p className="text-muted-foreground">
-                  {contentData[activeTab].content}
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </main>
+                <div>
+                  <h3 className=" text-2xl md:text-3xl font-semibold mb-6">
+                    {contentData[activeTab].title}
+                  </h3>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {contentData[activeTab].subtitle}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {contentData[activeTab].content}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </main>
+        </div>
       </div>
     </div>
   );

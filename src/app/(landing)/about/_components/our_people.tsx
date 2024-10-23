@@ -3,7 +3,7 @@ import Two from "@/app/assets/two.jpg";
 
 export default function OurPeople() {
   return (
-    <div className=" p-4 lg:p-10">
+    <div className=" p-4 max-w-screen-2xl mx-auto lg:p-10">
       <span>
         <h3 className=" font-semibold">OUR PEOPLE</h3>
         <span className=" h-1 w-10 bg-secondary block" />

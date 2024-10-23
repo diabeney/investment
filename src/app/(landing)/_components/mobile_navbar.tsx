@@ -28,6 +28,7 @@ export default function MobileNavbar({
             return (
               <li key={link.label}>
                 <Link
+                  onClick={() => closeMenuHandler()}
                   href={link.href}
                   className=" flex items-center gap-3 text-lg"
                 >
