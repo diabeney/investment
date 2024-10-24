@@ -16,9 +16,10 @@ import { Button } from "@/shared/components/ui/button";
 
 type Props = {
   posts: Post[];
+  baseUrl?: "news" | "insights";
 };
 
-export default function BlogList({ posts }: Props) {
+export default function BlogList({ posts, baseUrl = "news" }: Props) {
   const [currentPosts, setCurrentPosts] = useState<number>(1);
   const totalPosts = posts?.length;
   const postPerPage = 6;
@@ -69,7 +70,7 @@ export default function BlogList({ posts }: Props) {
           {currentPostsToShow?.map((post) => (
             <ClientSideRoutes
               key={post._id}
-              route={`/news/${post.slug.current}`}
+              route={`/${baseUrl}/${post.slug.current}`}
             >
               <div className="flex flex-col border-2 border-black overflow-hidden group cursor-pointer ">
                 <div className="relative w-fill h-60 group-hover:scale-105 transition-transform duration-500 ease-out ">

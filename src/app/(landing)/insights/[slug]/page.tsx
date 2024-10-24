@@ -8,9 +8,9 @@ import Image from "next/image";
 import NotFound from "@/app/not-found";
 import { Post } from "@/shared/entities/post";
 import {
-  getSinglePost,
-  getPostSlug,
-  getSinglePostsMetadata,
+  getSingleInsight,
+  getInsightsSlug,
+  getSingleInsightsMetadata,
 } from "@/shared/queries/index";
 
 type Props = {
@@ -18,7 +18,7 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  const posts: Post[] = await getPostSlug();
+  const posts: Post[] = await getInsightsSlug();
   const slugRoutes = posts.map((post) => post.slug.current);
 
   return slugRoutes.map((slug) => ({
@@ -29,7 +29,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params: { slug },
 }: Props): Promise<Metadata> {
-  const post = await getSinglePostsMetadata(slug);
+  const post = await getSingleInsightsMetadata(slug);
   return {
     title: post?.title,
     description: post?.description,
@@ -45,7 +45,7 @@ export async function generateMetadata({
 }
 
 export default async function SinglePosts({ params: { slug } }: Props) {
-  const posts = await getSinglePost(slug);
+  const posts = await getSingleInsight(slug);
 
   if (posts === null) {
     return <NotFound />;
