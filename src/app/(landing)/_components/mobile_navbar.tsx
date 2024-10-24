@@ -2,6 +2,7 @@ import { NavLinks } from "@/shared/constants/nav_link";
 import Link from "next/link";
 import { Button } from "@/shared/components/ui/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { usePathname } from "next/navigation";
 export default function MobileNavbar({
   isMenuOpen,
   closeMenuHandler,
@@ -9,6 +10,15 @@ export default function MobileNavbar({
   isMenuOpen: boolean;
   closeMenuHandler: () => void;
 }) {
+  const pathname = usePathname();
+  const isActive = (href: string) => {
+    if (href === "#") return false;
+    if (pathname === "/" && href === "/") return true;
+    return (
+      pathname.startsWith(href) &&
+      (pathname === href || pathname[href.length] === "/")
+    );
+  };
   return (
     <header
       className={` ${
@@ -30,7 +40,9 @@ export default function MobileNavbar({
                 <Link
                   onClick={() => closeMenuHandler()}
                   href={link.href}
-                  className=" flex items-center gap-3 text-lg"
+                  className={` ${
+                    isActive(link.href) ? "text-secondary font-bold" : ""
+                  } flex items-center gap-3 text-lg`}
                 >
                   <Icon icon={link.icon} />
                   {link.label}

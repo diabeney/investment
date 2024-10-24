@@ -22,12 +22,12 @@ const solutionsData = [
       "Stay informed with expert market analysis, investment insights, and financial reports to help you make well-informed decisions.",
     icon: "carbon:chart-line-data",
   },
-  {
-    solution: "Investment Themes",
-    description:
-      "Identify and invest in trending themes such as technology, sustainability, and emerging markets to capitalize on future growth opportunities.",
-    icon: "bi:grid-3x3-gap",
-  },
+  // {
+  //   solution: "Investment Themes",
+  //   description:
+  //     "Identify and invest in trending themes such as technology, sustainability, and emerging markets to capitalize on future growth opportunities.",
+  //   icon: "bi:grid-3x3-gap",
+  // },
   {
     solution: "Resources",
     description:
@@ -39,7 +39,7 @@ const solutionsData = [
 export default function SolutionsPage() {
   const router = useRouter();
   return (
-    <div className=" p-4 md:p-10">
+    <div className=" p-4 mx-auto max-w-screen-2xl md:p-10">
       <section className=" max-w-screen-lg mb-6">
         <h1 className=" text-3xl lg:text-6xl font-bold mb-3">
           Our Investment Solutions
@@ -53,7 +53,7 @@ export default function SolutionsPage() {
           future-ready investment strategy.
         </p>
       </section>
-      <section>
+      <section className=" ">
         <section className=" grid lg:grid-cols-2  py-6 gap-4">
           {solutionsData.map((item) => (
             <article

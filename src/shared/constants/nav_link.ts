@@ -10,9 +10,14 @@ export const NavLinks = [
     icon: "solar:info-square-bold-duotone",
   },
   {
-    label: "Funds",
-    href: "/funds",
-    icon: "solar:hand-money-line-duotone",
+    label: "News",
+    href: "/news",
+    icon: "solar:document-add-bold-duotone",
+  },
+  {
+    label: "Insights",
+    href: "/insights",
+    icon: "solar:graph-new-bold-duotone",
   },
   {
     label: "Solutions",

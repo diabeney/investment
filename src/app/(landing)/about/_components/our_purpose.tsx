@@ -113,7 +113,7 @@ export default function OurPurpose(): React.ReactElement {
             </ul>
           </nav>
           <main className="flex-1 lg:p-6">
-            <Card className="w-full mt-4 lg:mt-0 rounded-none">
+            <Card className="w-full mt-4 lg:mt-0 bg-white border-none rounded-none">
               <CardHeader className="flex flex-row items-center justify-between">
                 {isMobile && (
                   <div className="flex space-x-2">
