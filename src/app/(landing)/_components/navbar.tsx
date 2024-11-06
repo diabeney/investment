@@ -43,9 +43,9 @@ export default function Navbar() {
             })}
           </ul>
           <div className=" ml-auto flex gap-3 items-center">
-            <Button className=" px-6 py-2 bg-black hover:opacity-80 text-white">
-              Get started
-            </Button>
+            <Link href={'/contact'} className=" px-6 py-2 bg-black hover:opacity-80 text-white">
+              Contact Us
+            </Link>
             <Icon
               icon={"solar:user-circle-bold"}
               className=" h-8 w-8 text-stone-800 "

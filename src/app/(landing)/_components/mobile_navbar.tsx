@@ -52,9 +52,9 @@ export default function MobileNavbar({
           })}
         </ul>
         <div className=" flex gap-3 items-center">
-          <Button className=" px-6 py-2 bg-secondary text-black font-semibold">
-            Get started
-          </Button>
+          <Link href={'/contact'} className=" px-6 py-2 bg-secondary text-black font-semibold">
+            Contact Us
+          </Link >
           <Icon
             icon={"solar:user-circle-bold"}
             className=" h-8 w-8 text-stone-200 "

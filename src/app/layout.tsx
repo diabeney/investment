@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./(landing)/_components/navbar";
 import Footer from "./(landing)/_components/footer";
 import FirstFooter from "./(landing)/_components/first_footer";
+import { Toaster } from 'sonner'
 const WorkSans = Work_Sans({
   subsets: ["latin"],
   variable: "--font-paragraph",
@@ -85,6 +86,7 @@ export default function RootLayout({
       <body
         className={`${WorkSans.variable} ${BricolageGrotesque.variable}  antialiased`}
       >
+        <Toaster richColors position="top-right" closeButton />
         <Navbar />
         {children}
         <FirstFooter />

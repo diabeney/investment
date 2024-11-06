@@ -46,7 +46,7 @@
   }
 
   .btn {
-    @apply px-6 py-3 bg-primary  flex items-center;
+    @apply px-6 py-3 bg-primary text-white;
   }
 
   .btn-primary {
@@ -58,5 +58,12 @@
 
   mark {
     all: unset
+  }
+
+
+  input,
+  select,
+  textarea {
+    @apply rounded-lg px-4 py-2.5 outline-none ring-1 ring-gray-300 duration-300 placeholder:text-sm focus:ring-gray-500 disabled:pointer-events-none disabled:opacity-50 md:placeholder:text-base;
   }
 }

@@ -15,21 +15,15 @@ export default function AboutWhoWeAre() {
         <section className=" grid place-items-center gap-4 md:grid-cols-2">
           <div className=" text-lg">
             <p>
-              Investico Inc., a pioneering investment management company, is
-              committed to creating a platform that empowers individuals,
-              businesses, and governments to achieve their financial goals.
+              Blackcrest Capital Group is a uniquely proactive investment firm, constantly scouting for top-performing assets to maximize returns for our investors. With years of expertise in real estate, stocks, and microfinancing, our lead advisors bring deep industry insight, ensuring that your investments are both secure and positioned for optimal market returns
             </p>
             <br />
             <p>
-              Our mission is to help people and businesses navigate the
-              complexities of the financial world and make informed decisions
-              that lead to long-term success.
+              Blackcrest Capital Group offers investors three distinct investment options: real estate, microfinancing, and stocks. Investors can choose a customized mix of these investments or opt for all three, based on their individual risk tolerance and financial goals
             </p>
             <br />
             <p>
-              Our team of experienced professionals and advisors work closely
-              with clients to create unique, personalized investment strategies
-              that deliver long-term value for both individuals and businesses.
+              We offer financial planning support as a free part of the package to all our clients and ensure you’re guided in choosing the best investment that suits your lifestyle. We help footballers preserve their capital well after their careers and ensure they have a steady flow of returns from their investments.
             </p>
           </div>
           <div className=" h-[300px] md:h-[500px] w-full">

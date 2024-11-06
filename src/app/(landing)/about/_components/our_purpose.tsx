@@ -23,33 +23,26 @@ interface ContentData {
 }
 
 const contentData: ContentData = {
-  "Financial security": {
-    title: "Enhancing your financial security",
-    subtitle: "Protecting your assets from financial risks",
+  "Real estate": {
+    title: "Premium European Property Investments",
+    subtitle: "High-value properties across Europe, expertly maintained to maximize long-term returns.",
     content:
-      "We help individuals and organizations develop strong financial security by offering a variety of investment options, risk management tools, and financial education programs. Our goal is to create a more secure and resilient financial environment for all.",
+      "Our real estate portfolio invest in high end real estates across all of Europe and ensure the our properties are maintained with high standards and thus able to accrue value over time for our investors.",
     image: One,
   },
-  "Investment access": {
-    title: "Helping more people retire securely",
-    subtitle: "A secure retirement for port workers",
+  "Microfinancing": {
+    title: "Short-Term Business Lending",
+    subtitle: "Quick liquidity solutions for businesses, with interest income for our investors.",
     content:
-      "We work closely with Forth Ports to manage a large part of their pension plan that helps employees save for retirement by investing in stocks, bonds, real estate and infrastructure – including ports. In that way, these investments give Forth Ports' employees access to opportunities in the local economy they helped build.",
+      "Our microfinancing portfolio focuses on providing short-term loans to businesses facing liquidity or cash flow challenges. Through these loans, we offer timely financial support to companies in critical need, while charging competitive interest rates. We have partnered with companies such as Raal La Louviere, assisting them with financing for their Whoop investment, as well as 4theplayers Academy and many other in similar need.",
     image: Two,
   },
-  "Sustainable outcomes": {
-    title: "Sustainable Investment Strategies",
-    subtitle: "Building a better future",
+  "Stocks": {
+    title: "Curated Stock & Crypto Portfolios",
+    subtitle: " Low-risk S&P 500 and expert-selected stocks with a record of high returns.",
     content:
-      "Our sustainable investment strategies focus on long-term value creation while considering environmental, social, and governance factors. We aim to generate positive outcomes for both investors and society at large.",
+      "Our stock and cryptocurrency investment strategy centers on the S&P 500, prioritizing low-risk assets alongside a curated selection of stocks chosen by our seasoned financial advisors. Our lead advisor, with over six years of active stock market experience, has a proven track record for identifying high-potential opportunities. In 2019, he pinpointed Nio—a Chinese electric vehicle company—when it was valued at just $1 per share; by 2021, it had surged to $60. This is just one example of the many successful investments he has directed us toward, with numerous other carefully selected stocks delivering remarkable returns",
     image: Three,
-  },
-  "Economic resilience": {
-    title: "Strengthening Economic Foundations",
-    subtitle: "Preparing for economic challenges",
-    content:
-      "We help individuals and organizations build economic resilience through diversified investment strategies, risk management tools, and financial education programs. Our goal is to create a more stable and prosperous economic environment for all.",
-    image: Four,
   },
 };
 
@@ -70,7 +63,7 @@ const useMediaQuery = (query: string): boolean => {
 };
 
 export default function OurPurpose(): React.ReactElement {
-  const [activeTab, setActiveTab] = useState<string>("Financial security");
+  const [activeTab, setActiveTab] = useState<string>("Real estate");
   const isMobile = useMediaQuery("(max-width: 768px)");
   const tabs = Object.keys(contentData);
 
@@ -145,7 +138,7 @@ export default function OurPurpose(): React.ReactElement {
                   <h3 className="text-lg font-semibold mb-2">
                     {contentData[activeTab].subtitle}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-stone-700">
                     {contentData[activeTab].content}
                   </p>
                 </div>
