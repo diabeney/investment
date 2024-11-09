@@ -61,21 +61,23 @@ export default function Navbar() {
           </div>
         </nav>
       </header>
-      <div className="  block border-b md:hidden sticky z-50 top-0 bg-white">
+      <div className="  block border-b border-b-neutral-700 md:hidden sticky z-50 top-0 bg-black">
         <div className=" p-4 flex justify-between ">
-          <section>.logo</section>
+          <div className=" w-20 h-8 overflow-hidden ">
+            <Image src={Logo} alt={'logo'} width={300} className={'h-full w-full object-cover object-bottom '}/>
+          </div>
           <button
-            onClick={() => setMenuOpen(true)}
-            className=" w-fit bg-stone-200 p-2 rounded-full hover:opacity-80"
+              onClick={() => setMenuOpen(true)}
+              className=" w-fit bg-stone-200 p-2 rounded-full hover:opacity-80"
           >
             <Icon
-              icon="solar:hamburger-menu-line-duotone"
-              className=" text-black"
+                icon="solar:hamburger-menu-line-duotone"
+                className=" text-black"
             />
           </button>
         </div>
         {menuOpen && (
-          <MobileNavbar isMenuOpen={menuOpen} closeMenuHandler={closeMenu} />
+            <MobileNavbar isMenuOpen={menuOpen} closeMenuHandler={closeMenu}/>
         )}
       </div>
     </div>

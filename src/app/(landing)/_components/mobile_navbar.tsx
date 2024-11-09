@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Button } from "@/shared/components/ui/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import Logo from "@/app/assets/logo_white.png";
 export default function MobileNavbar({
   isMenuOpen,
   closeMenuHandler,
@@ -32,36 +34,38 @@ export default function MobileNavbar({
         <Icon icon="material-symbols-light:close" className=" text-black" />
       </button>
       <nav className=" flex flex-col mt-10 p-4 gap-12">
-        <div className=" font-bold text-center">.logo</div>
+        <div className=" w-20 h-32 mx-auto overflow-hidden ">
+          <Image src={Logo} alt={'logo'} width={300} className={'h-full w-full object-cover object-top '}/>
+        </div>
         <ul className=" flex gap-6 flex-col font-semibold">
           {NavLinks.map((link) => {
             return (
-              <li key={link.label}>
-                <Link
-                  onClick={() => closeMenuHandler()}
-                  href={link.href}
-                  className={` ${
-                    isActive(link.href) ? "text-secondary font-bold" : ""
-                  } flex items-center gap-3 text-lg`}
-                >
-                  <Icon icon={link.icon} />
-                  {link.label}
-                </Link>
-              </li>
+                <li key={link.label}>
+                  <Link
+                      onClick={() => closeMenuHandler()}
+                      href={link.href}
+                      className={` ${
+                          isActive(link.href) ? "text-secondary font-bold" : ""
+                      } flex items-center gap-3 text-lg`}
+                  >
+                    <Icon icon={link.icon}/>
+                    {link.label}
+                  </Link>
+                </li>
             );
           })}
         </ul>
         <div className=" flex gap-3 items-center">
           <Link href={'/contact'} className=" px-6 py-2 bg-secondary text-black font-semibold">
             Contact Us
-          </Link >
+          </Link>
           <Icon
-            icon={"solar:user-circle-bold"}
-            className=" h-8 w-8 text-stone-200 "
+              icon={"solar:user-circle-bold"}
+              className=" h-8 w-8 text-stone-200 "
           />
           <Icon
-            icon={"solar:map-point-bold"}
-            className=" h-8 w-8 text-stone-200 "
+              icon={"solar:map-point-bold"}
+              className=" h-8 w-8 text-stone-200 "
           />
         </div>
       </nav>
