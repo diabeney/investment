@@ -3,10 +3,10 @@ import Three from "@/app/assets/three.jpg";
 
 export default function ResourcesPage() {
   return (
-    <div className="bg-[#f5f3e9] ">
+    <div className=" ">
       <div className="max-w-screen-2xl mx-auto p-4 md:p-16">
         <header className="mb-8">
-          <h2 className=" font-semibold text-black uppercase border-b border-red-500 inline-block pb-1">
+          <h2 className=" font-semibold uppercase border-b border-red-500 inline-block pb-1">
             BlackRock Solutions
           </h2>
         </header>

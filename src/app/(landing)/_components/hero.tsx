@@ -18,7 +18,7 @@ export default function HeroSection() {
           retirement, or explore new opportunities, our expert advisors are here
           to help you achieve your goals and secure your future.
         </p>
-        <Button className=" btn text-white hover:opacity-80">
+        <Button className=" btn flex bg-white text-black hover:opacity-80">
           Read our story
           <Icon icon="solar:arrow-right-up-bold-duotone" className="ml-3" />
         </Button>

@@ -58,13 +58,13 @@ export default function SolutionsPage() {
           {solutionsData.map((item) => (
             <article
               key={item.solution}
-              className=" px-2 bg-stone-50 pt-4 relative z-10 md:px-20 md:pt-20 border  "
+              className=" px-2 bg-neutral-950 border-neutral-900 border pt-4 relative z-10 md:px-20 md:pt-20 bo  "
             >
               <div className=" p-5 mb-4 bg-stone-200 w-fit rounded-full">
                 <Icon icon={item.icon} className=" w-12 h-12 text-secondary" />
               </div>
               <h3 className=" font-bold text-2xl mb-3">{item.solution}</h3>
-              <p className=" text-black line-clamp-4">{item.description}</p>
+              <p className=" text-neutral-50 line-clamp-4">{item.description}</p>
               <div className="  bg-black w-full  md:w-4/5  mt-4">
                 <Button
                   onClick={() =>
@@ -74,11 +74,11 @@ export default function SolutionsPage() {
                         .toLowerCase()}`
                     )
                   }
-                  className=" w-full hover:opacity-80 line-clamp-1 flex text-sm  md:text-base lg:items-center text-left text-white"
+                  className=" w-full bg-white text-black hover:opacity-80 line-clamp-1 flex text-sm  md:text-base lg:items-center text-left "
                 >
                   <Icon
                     icon={"solar:alt-arrow-right-linear"}
-                    className=" text-secondary"
+                    className=" "
                   />
                   Learn More about {item.solution}
                 </Button>

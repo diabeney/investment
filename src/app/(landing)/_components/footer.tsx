@@ -8,6 +8,7 @@
 //   "Advisory",
 // ];
 
+
 // const company = ["About Us", "What we do", "Careers", "Blog", "Contact Us"];
 
 // const legal = [
@@ -115,10 +116,12 @@
 // }
 
 import Link from "next/link";
+import Image from "next/image";
+import Logo from "@/app/assets/logo_white.png";
 
 const footerData = {
   company: {
-    name: "BlackRock",
+    name: "",
     description:
       "As a global investment manager and fiduciary to our clients, our purpose at BlackRock is to help everyone experience financial well-being. Since 1999, we've been a leading provider of financial technology, and our clients turn to us for the solutions they need when planning for their most important goals.",
   },
@@ -152,6 +155,9 @@ export default function Footer() {
     <footer className="bg-black text-white py-12 px-4 md:px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row">
         <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
+          <div className=" w-32 overflow-hidden ">
+            <Image src={Logo} alt={'logo'} width={300} className={'h-full w-full object-cover object-top '}/>
+          </div>
           <h2 className="text-4xl font-bold mb-4">{footerData.company.name}</h2>
           <p className="text-sm leading-relaxed">
             {footerData.company.description}

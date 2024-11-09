@@ -80,7 +80,7 @@ export default function OurPurpose(): React.ReactElement {
   };
 
   return (
-    <div className="  bg-stone-100 ">
+    <div className="  bg-neutral-950 ">
       <div className="p-4 lg:p-12 max-w-screen-2xl mx-auto">
         <span>
           <h3 className=" font-semibold">WHAT WE DO</h3>
@@ -106,7 +106,7 @@ export default function OurPurpose(): React.ReactElement {
             </ul>
           </nav>
           <main className="flex-1 lg:p-6">
-            <Card className="w-full mt-4 lg:mt-0 bg-white border-none rounded-none">
+            <Card className="w-full bg-black mt-4 lg:mt-0 border-none rounded-none">
               <CardHeader className="flex flex-row items-center justify-between">
                 {isMobile && (
                   <div className="flex space-x-2">
@@ -138,7 +138,7 @@ export default function OurPurpose(): React.ReactElement {
                   <h3 className="text-lg font-semibold mb-2">
                     {contentData[activeTab].subtitle}
                   </h3>
-                  <p className="text-stone-700">
+                  <p className="text-stone-200">
                     {contentData[activeTab].content}
                   </p>
                 </div>

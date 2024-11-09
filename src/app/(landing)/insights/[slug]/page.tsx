@@ -56,7 +56,7 @@ export default async function SinglePosts({ params: { slug } }: Props) {
         <div className=" ">
           <BackButton />
         </div>
-        <h1 className="text-3xl leading-[1.6] py-4 md:text-5xl md:leading-[4rem] font-semibold text-black ">
+        <h1 className="text-3xl leading-[1.6] py-4 md:text-5xl md:leading-[4rem] font-semibold text-white ">
           {posts.title}
         </h1>
         <div className="flex flex-row items-center  gap-2 md:gap-x-4 my-5">

@@ -29,7 +29,7 @@ export default function ClientsPage() {
             endowments for over thirty years and provide a dedicated offering
           </p>
         </div>
-        <div className="md:w-1/2 bg-white text-black">
+        <div className="md:w-1/2  ">
           <div className="relative h-64 md:h-96">
             <Image
               src={Four}
@@ -69,7 +69,7 @@ export default function ClientsPage() {
           charity-focused strategies.
         </p>
       </section>
-      <div className=" bg-stone-50 py-6 md:py-12 ">
+      <div className=" bg-neutral-950 py-6 md:py-12 ">
         <div className=" p-4 lg:p-12 grid gap-6 lg:grid-cols-2 max-w-screen-2xl mx-auto">
           <section>
             <div className="container overflow-hidden w-full max-w-[890px] mx-auto space-y-2">

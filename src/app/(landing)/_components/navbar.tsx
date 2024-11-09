@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { NavLinks } from "@/shared/constants/nav_link";
 import { Icon } from "@iconify/react";
+import Image from "next/image";
+import Logo from '@/app/assets/logo_white.png'
 import { Button } from "@/shared/components/ui/button";
 import { useState } from "react";
 import MobileNavbar from "./mobile_navbar";
@@ -20,10 +22,12 @@ export default function Navbar() {
     );
   };
   return (
-    <div className="sticky z-50 top-0 bg-white/80 backdrop-blur-md saturate-200">
-      <header className=" max-w-screen-2xl mx-auto hidden md:block  p-6 border-b">
+    <div className="sticky z-50 top-0 bg-black/80 backdrop-blur-md saturate-200">
+      <header className=" max-w-screen-2xl mx-auto hidden md:block  p-6">
         <nav className=" flex items-center gap-12">
-          <div className=" font-bold">.logo</div>
+          <div className=" w-20 h-20 overflow-hidden ">
+            <Image src={Logo} alt={'logo'} width={300} className={'h-full w-full object-cover object-top '} />
+          </div>
           <ul className=" flex gap-4 font-semibold">
             {NavLinks.map((link) => {
               return (
@@ -33,7 +37,7 @@ export default function Navbar() {
                     className={`${
                       isActive(link.href)
                         ? "text-secondary font-extrabold"
-                        : "text-primary"
+                        : "text-white"
                     }`}
                   >
                     {link.label}
@@ -43,16 +47,16 @@ export default function Navbar() {
             })}
           </ul>
           <div className=" ml-auto flex gap-3 items-center">
-            <Link href={'/contact'} className=" px-6 py-2 bg-black hover:opacity-80 text-white">
+            <Link href={'/contact'} className=" px-6 py-2 bg-white hover:opacity-80 text-black">
               Contact Us
             </Link>
             <Icon
               icon={"solar:user-circle-bold"}
-              className=" h-8 w-8 text-stone-800 "
+              className=" h-8 w-8 text-stone-200 "
             />
             <Icon
               icon={"solar:map-point-bold"}
-              className=" h-8 w-8 text-stone-800 "
+              className=" h-8 w-8 text-stone-200 "
             />
           </div>
         </nav>

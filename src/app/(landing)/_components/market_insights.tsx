@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function MarketInsights() {
   return (
-    <div className=" bg-stone-100 ">
+    <div className="  ">
       <div className=" py-20 p-4   grid gap-4 md:grid-cols-2 max-w-screen-2xl mx-auto">
         <section className=" grid place-content-center">
           <h1 className=" mb-4 text-3xl font-semibold">

@@ -7,7 +7,7 @@ import MarketInsights from "./_components/market_insights";
 
 export default function Home() {
   return (
-    <div>
+    <div className={''}>
       <HeroSection />
       <NewsAndEvents />
       <section className=" p-6 max-w-screen-2xl mx-auto">

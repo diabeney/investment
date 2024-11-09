@@ -9,7 +9,7 @@ export default function BackButton() {
     <Button
       variant={"link"}
       type="button"
-      className="mb-6 flex items-center gap-2 p-0 py-4"
+      className="mb-6 flex items-center gap-2 text-white p-0 py-4"
       onClick={() => router.back()}
     >
       <ArrowLeftIcon size={14} />

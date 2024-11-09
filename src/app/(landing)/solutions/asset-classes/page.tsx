@@ -50,7 +50,7 @@ const faqItems = [
 export default function AssetClassesPage() {
   return (
     <div className=" ">
-      <section className=" bg-secondary ">
+      <section className="  ">
         <div className=" p-4 lg:p-10  max-w-screen-2xl mx-auto">
           <h2 className=" text-3xl lg:text-6xl font-bold">
             What are multi-asset portfolios
@@ -104,7 +104,9 @@ export default function AssetClassesPage() {
           </li>
         </ul>
       </section>
-      <div className=" p-6 space-y-6 max-w-screen-2xl mx-auto">
+      <div className={'bg-neutral-950'}>
+
+      <div className=" p-8 space-y-6 max-w-screen-2xl mx-auto">
         <h1 className=" text-3xl md:text-5xl font-bold">
           What are the benefits of multi-asset investment portfolios?
         </h1>
@@ -166,6 +168,7 @@ export default function AssetClassesPage() {
             </CardContent>
           </Card>
         </div>
+      </div>
       </div>
       <div className="bg-black text-white py-8">
         <div className=" p-6 mx-auto max-w-screen-2xl">

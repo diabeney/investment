@@ -3,65 +3,30 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 const whatWeDo = [
   {
     id: "1",
-    title: "Wealth Management",
+    title: "Real Estate",
     description:
-      "Our wealth management services are tailored to help you grow and preserve your assets, ensuring your financial goals are met with personalized strategies and expert guidance.",
-    icon: "mdi:finance",
-  },
-  {
-    id: "2",
-    title: "Investment Advisory",
-    description:
-      "We offer professional investment advice to help you navigate complex markets and make informed decisions. Our advisors work closely with you to craft a portfolio that aligns with your risk tolerance and objectives.",
-    icon: "mdi:chart-line",
-  },
-  {
-    id: "3",
-    title: "Retirement Planning",
-    description:
-      "Secure your financial future with our comprehensive retirement planning services. We help you create a roadmap to achieve your retirement goals and enjoy peace of mind in your later years.",
+      "Our real estate portfolio invest in high end real estates across all of Europe and ensure the our properties are maintained with high standards and thus able to accrue value over time for our investors.",
     icon: "mdi:account-clock",
   },
   {
-    id: "4",
-    title: "Estate Planning",
+    id: "2",
+    title: "Microfinancing",
     description:
-      "Our estate planning services help you protect your legacy and ensure your assets are distributed according to your wishes. We provide expert guidance on wills, trusts, and tax-efficient strategies.",
-    icon: "mdi:file-document-box-check",
+      "Our microfinancing portfolio focuses on providing short-term loans to businesses facing liquidity or cash flow challenges. Through these loans, we offer timely financial support to companies in critical need, while charging competitive interest rates.",
+    icon: "mdi:finance",
   },
   {
-    id: "5",
-    title: "Tax Optimization",
+    id: "3",
+    title: "Stocks",
     description:
-      "Maximize your investment returns with our tax optimization strategies. We work with you to minimize tax liabilities and increase the efficiency of your investment portfolio.",
-    icon: "mdi:calculator",
-  },
-  {
-    id: "6",
-    title: "Risk Management",
-    description:
-      "We help you manage financial risks by providing risk assessment and mitigation strategies. Our goal is to ensure that your investment portfolio is resilient against market volatility.",
-    icon: "mdi:shield-alert",
-  },
-  {
-    id: "7",
-    title: "Alternative Investments",
-    description:
-      "Explore opportunities beyond traditional asset classes with our alternative investment options, including private equity, hedge funds, and real estate.",
-    icon: "mdi:domain",
-  },
-  {
-    id: "8",
-    title: "Education Planning",
-    description:
-      "Plan for your children's education with our dedicated education planning services. We assist in setting up investment accounts that can grow over time, ensuring a bright future for your loved ones.",
-    icon: "mdi:school",
+      "Our stock and cryptocurrency investment strategy centers on the S&P 500, prioritizing low-risk assets alongside a curated selection of stocks chosen by our seasoned financial advisors.",
+    icon: "mdi:chart-line",
   },
 ];
 
 export default function WhatWeDo() {
   return (
-    <section className=" bg-stone-100  ">
+    <section className="  ">
       <div className=" py-16 px-6 max-w-screen-2xl mx-auto">
         <h1 className=" text-3xl md:text-5xl font-extrabold max-w-screen-xl mb-4">
           Funds that match up with investing goals and preferences
@@ -101,18 +66,18 @@ export default function WhatWeDo() {
           {whatWeDo.map((item) => (
             <article
               key={item.id}
-              className=" px-2 pt-4 relative z-10 md:px-20 md:pt-20 border bg-white "
+              className=" px-2 pt-4 relative z-10 md:px-20 md:pt-20 border border-stone-600 bg-neutral-900 "
             >
               <div className=" p-5 mb-4 bg-stone-200 w-fit rounded-full">
                 <Icon icon={item.icon} className=" w-12 h-12 text-secondary" />
               </div>
               <h3 className=" font-bold text-2xl mb-3">{item.title}</h3>
-              <p className=" text-black line-clamp-4">{item.description}</p>
+              <p className=" text-stone-50 line-clamp-4">{item.description}</p>
               <div className="  bg-black w-full  md:w-4/5  mt-4">
-                <Button className=" w-full hover:opacity-80 line-clamp-1 flex text-sm  md:text-base lg:items-center text-left text-white">
+                <Button className=" w-full text-black bg-white hover:opacity-80 line-clamp-1 flex text-sm  md:text-base lg:items-center text-left">
                   <Icon
                     icon={"solar:alt-arrow-right-linear"}
-                    className=" text-secondary"
+                    className=" text-black"
                   />
                   Learn More about {item.title}
                 </Button>

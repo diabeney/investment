@@ -72,7 +72,7 @@ export default function BlogList({ posts, baseUrl = "news" }: Props) {
               key={post._id}
               route={`/${baseUrl}/${post.slug.current}`}
             >
-              <div className="flex flex-col border-2 border-black overflow-hidden group cursor-pointer ">
+              <div className="flex flex-col border-2 overflow-hidden bg-neutral-950 border-neutral-900 group cursor-pointer ">
                 <div className="relative w-fill h-60 group-hover:scale-105 transition-transform duration-500 ease-out ">
                   <Image
                     className="object-cover md:object-center"

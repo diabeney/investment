@@ -1,6 +1,6 @@
 export default function WhatWeThink() {
   return (
-    <div className=" bg-secondary ">
+    <div className=" bg-neutral-900 ">
       <div className=" p-4 lg:p-12 grid lg:grid-cols-2 max-w-screen-2xl mx-auto">
         <section className=" grid place-content-center ">
           <h2 className=" text-3xl mb-6 font-semibold">

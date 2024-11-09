@@ -84,7 +84,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${WorkSans.variable} ${BricolageGrotesque.variable}  antialiased`}
+        className={`${WorkSans.variable} ${BricolageGrotesque.variable} bg-black text-white  antialiased`}
       >
         <Toaster richColors position="top-right" closeButton />
         <Navbar />
