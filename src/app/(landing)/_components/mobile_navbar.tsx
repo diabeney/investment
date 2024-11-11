@@ -4,7 +4,7 @@ import { Button } from "@/shared/components/ui/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import Logo from "@/app/assets/logo_white.png";
+import Logo from "@/app/assets/logo_dark.png";
 export default function MobileNavbar({
   isMenuOpen,
   closeMenuHandler,
@@ -34,7 +34,7 @@ export default function MobileNavbar({
         <Icon icon="material-symbols-light:close" className=" text-black" />
       </button>
       <nav className=" flex flex-col mt-10 p-4 gap-12">
-        <div className=" w-20 h-32 mx-auto overflow-hidden ">
+        <div className=" w-40 h-18 mx-auto overflow-hidden ">
           <Image src={Logo} alt={'logo'} width={300} className={'h-full w-full object-cover object-top '}/>
         </div>
         <ul className=" flex gap-6 flex-col font-semibold">

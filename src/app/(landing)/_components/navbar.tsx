@@ -3,7 +3,8 @@ import Link from "next/link";
 import { NavLinks } from "@/shared/constants/nav_link";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-import Logo from '@/app/assets/logo_white.png'
+import Logo from '@/app/assets/logo_white.png';
+import LogoNav from '@/app/assets/logo_dark.png'
 import { Button } from "@/shared/components/ui/button";
 import { useState } from "react";
 import MobileNavbar from "./mobile_navbar";
@@ -22,11 +23,11 @@ export default function Navbar() {
     );
   };
   return (
-    <div className="sticky z-50 top-0 bg-black/80 backdrop-blur-md saturate-200">
+    <div className="sticky z-50 top-0 bg-black/80 backdrop-blur-md ">
       <header className=" max-w-screen-2xl mx-auto hidden md:block  p-6">
-        <nav className=" flex items-center gap-12">
-          <div className=" w-20 h-20 overflow-hidden ">
-            <Image src={Logo} alt={'logo'} width={300} className={'h-full w-full object-cover object-top '} />
+        <nav className=" flex items-center gap-6">
+          <div className=" w-32 h-12 overflow-hidden ">
+            <Image src={LogoNav} alt={'logo'} width={300} className={'h-full w-full object-cover object-top '} />
           </div>
           <ul className=" flex gap-4 font-semibold">
             {NavLinks.map((link) => {
@@ -63,12 +64,12 @@ export default function Navbar() {
       </header>
       <div className="  block border-b border-b-neutral-700 md:hidden sticky z-50 top-0 bg-black">
         <div className=" p-4 flex justify-between ">
-          <div className=" w-20 h-8 overflow-hidden ">
+          <div className=" w-24 h-9 mt-1 overflow-hidden ">
             <Image src={Logo} alt={'logo'} width={300} className={'h-full w-full object-cover object-bottom '}/>
           </div>
           <button
               onClick={() => setMenuOpen(true)}
-              className=" w-fit bg-stone-200 p-2 rounded-full hover:opacity-80"
+              className=" w-fit bg-stone-200 p-3 rounded-full hover:opacity-80"
           >
             <Icon
                 icon="solar:hamburger-menu-line-duotone"

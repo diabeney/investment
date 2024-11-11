@@ -66,22 +66,22 @@ export default function WhatWeDo() {
           {whatWeDo.map((item) => (
             <article
               key={item.id}
-              className=" px-2 pt-4 relative z-10 md:px-20 md:pt-20 border border-stone-600 bg-neutral-900 "
+              className="pt-4 relative z-10 md:px-20 md:pt-20 border border-stone-600 bg-neutral-900 "
             >
+              <div className={'px-2'}>
               <div className=" p-5 mb-4 bg-stone-200 w-fit rounded-full">
                 <Icon icon={item.icon} className=" w-12 h-12 text-secondary" />
               </div>
               <h3 className=" font-bold text-2xl mb-3">{item.title}</h3>
               <p className=" text-stone-50 line-clamp-4">{item.description}</p>
-              <div className="  bg-black w-full  md:w-4/5  mt-4">
-                <Button className=" w-full text-black bg-white hover:opacity-80 line-clamp-1 flex text-sm  md:text-base lg:items-center text-left">
+              </div>
+                <button className=" btn items-center font-semibold gap-2 pl-2 w-full mt-3 text-black bg-white hover:opacity-80 line-clamp-1 text-sm md:text-base flex ">
                   <Icon
                     icon={"solar:alt-arrow-right-linear"}
                     className=" text-black"
                   />
                   Learn More about {item.title}
-                </Button>
-              </div>
+                </button>
             </article>
           ))}
         </section>

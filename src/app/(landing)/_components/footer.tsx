@@ -117,7 +117,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/app/assets/logo_white.png";
+import Logo from "@/app/assets/logo_dark.png";
 
 const footerData = {
   company: {
@@ -155,7 +155,7 @@ export default function Footer() {
     <footer className="bg-black text-white py-12 px-4 md:px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row">
         <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
-          <div className=" w-32 overflow-hidden ">
+          <div className=" w-52 h-20 overflow-hidden ">
             <Image src={Logo} alt={'logo'} width={300} className={'h-full w-full object-cover object-top '}/>
           </div>
           <h2 className="text-4xl font-bold mb-4">{footerData.company.name}</h2>

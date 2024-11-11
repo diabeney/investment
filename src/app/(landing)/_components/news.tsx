@@ -49,7 +49,7 @@ export default function NewsAndEvents() {
         <section className=" grid lg:grid-cols-3  py-6 gap-4">
           {news.map((item) => (
             <article key={item.id} className=" p-4 md:p-12 bg-secondary">
-              <h3 className=" font-semibold text-xl mb-3">{item.title}</h3>
+              <h3 className=" font-semibold text-xl text-black mb-3">{item.title}</h3>
               <p className=" text-black line-clamp-4">{item.description}</p>
               <Button className=" w-full mt-6 hover:opacity-80 bg-black text-white">
                 Read More

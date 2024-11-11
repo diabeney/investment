@@ -25,18 +25,18 @@ export default function MarketInsights() {
         asperiores quasi.
         </p>
         </section> */}
-        <div className=" max-w-screen-lg drop-shadow-md bg-white p-8  mx-auto ">
+        <div className=" max-w-screen-lg drop-shadow-md bg-neutral-950 p-8  mx-auto ">
           <section className=" flex flex-col gap-2 md:px-6">
             <Link
               href={"/"}
-              className=" text-lg md:text-2xl hover:bg-stone-50 font-semibold border-b py-4 flex items-center justify-between border-b-black"
+              className=" text-lg md:text-2xl hover:bg-neutral-800 font-semibold border-b py-4 flex items-center justify-between border-b-black"
             >
               How to invest with Investice Inc.
               <Icon icon={"solar:alt-arrow-right-linear"} />
             </Link>
             <Link
               href={"/"}
-              className=" text-lg md:text-2xl hover:bg-stone-50 font-semibold border-b py-4 flex items-center justify-between border-b-black"
+              className=" text-lg md:text-2xl hover:bg-neutral-800 font-semibold border-b py-4 flex items-center justify-between border-b-black"
             >
               How to invest with us
               <Icon icon={"solar:alt-arrow-right-linear"} />

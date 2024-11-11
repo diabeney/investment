@@ -23,7 +23,7 @@ export default function AboutWhoWeAre() {
             </p>
             <br />
             <p>
-              We offer financial planning support as a free part of the package to all our clients and ensure you’re guided in choosing the best investment that suits your lifestyle. We help footballers preserve their capital well after their careers and ensure they have a steady flow of returns from their investments.
+              We offer financial planning support as a free part of the package to all our clients and ensure you’re guided in choosing the best investment that suits your lifestyle. We help clients preserve their capital well after their careers and ensure they have a steady flow of returns from their investments.
             </p>
           </div>
           <div className=" h-[300px] md:h-[500px] w-full">
