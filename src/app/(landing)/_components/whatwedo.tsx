@@ -62,12 +62,14 @@ export default function WhatWeDo() {
         repellendus
         </p>
         </section> */}
-        <section className=" grid lg:grid-cols-2  py-6 gap-4">
+        <section className=" grid lg:grid-cols-3  py-6 gap-4">
           {whatWeDo.map((item) => (
             <article
               key={item.id}
-              className="pt-4 relative z-10 md:px-20 md:pt-20 border border-stone-600 bg-neutral-900 "
+              className=" relative z-10 border border-stone-600 bg-neutral-900 "
             >
+              <div className={'p-4'}>
+
               <div className={'px-2'}>
               <div className=" p-5 mb-4 bg-stone-200 w-fit rounded-full">
                 <Icon icon={item.icon} className=" w-12 h-12 text-secondary" />
@@ -75,7 +77,8 @@ export default function WhatWeDo() {
               <h3 className=" font-bold text-2xl mb-3">{item.title}</h3>
               <p className=" text-stone-50 line-clamp-4">{item.description}</p>
               </div>
-                <button className=" btn items-center font-semibold gap-2 pl-2 w-full mt-3 text-black bg-white hover:opacity-80 line-clamp-1 text-sm md:text-base flex ">
+              </div>
+                <button className=" btn items-center font-semibold gap-2 pl-4 w-full mt-3 text-black bg-white hover:opacity-80 line-clamp-1 text-sm md:text-base flex ">
                   <Icon
                     icon={"solar:alt-arrow-right-linear"}
                     className=" text-black"

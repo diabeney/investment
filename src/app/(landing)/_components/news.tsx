@@ -18,18 +18,7 @@ const news = [
     description:
       "Learn more about sustainable investing and how it aligns with your values while delivering long-term returns. Our firm is committed to offering eco-friendly and socially responsible investment options.",
   },
-  // {
-  //   id: "4",
-  //   title: "Join Our Upcoming Financial Planning Webinar",
-  //   description:
-  //     "We are hosting a free webinar on financial planning strategies for 2025 and beyond. Join our experts to learn how to maximize your investments and prepare for future economic challenges.",
-  // },
-  // {
-  //   id: "5",
-  //   title: "Introducing Our New Portfolio Management Tools",
-  //   description:
-  //     "We have launched new digital tools that allow clients to track their investment performance and make informed decisions more easily. Explore these features in your online account today.",
-  // },
+
 ];
 
 export default function NewsAndEvents() {
