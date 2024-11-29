@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "./(landing)/_components/navbar";
 import Footer from "./(landing)/_components/footer";
 import FirstFooter from "./(landing)/_components/first_footer";
-import { Toaster } from 'sonner'
+import { Toaster } from "sonner";
 const WorkSans = Work_Sans({
   subsets: ["latin"],
   variable: "--font-paragraph",
@@ -16,64 +16,62 @@ const BricolageGrotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "Blackcrest investment",
+  title: "BlackCrest Investment Solutions",
   description:
-    "Blackcrest specializes in creating tailored software solutions for non-technical clients. Our expertise transforms your vision into reality. Contact us today!",
-  category: "website",
-  applicationName: "Blackcrest",
-  metadataBase: new URL("https://Blackcrest.com"),
-  creator: "Blackcrest",
+    "BlackCrest offers expertly curated investment opportunities tailored to meet your financial goals. From real estate to microfinance, our solutions ensure steady income and long-term growth.",
+  category: "Investment Services",
+  applicationName: "BlackCrest",
+  metadataBase: new URL("https://blackcrest.com"),
+  creator: "BlackCrest",
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
     countryName: "Ghana",
-    title: "Blackcrest - Custom Software Solutions for Non-Technical Clients",
-    url: "https://Blackcrest.com",
+    title: "BlackCrest - Expert Investment Opportunities",
+    url: "https://blackcrest.com",
     description:
-      "Blackcrest specializes in creating tailored software solutions for non-technical clients. Our expertise transforms your vision into reality. Contact us today!",
-    emails: ["Blackcrest@gmail.com"],
-    siteName: "Blackcrest",
+      "Explore curated investment options at BlackCrest. With expertise in real estate, microfinance, and acquisitions, we guide you to financial success.",
+    emails: ["info@blackcrest.com"],
+    siteName: "BlackCrest",
     type: "website",
     images: [
       {
-        url: `https://Blackcrest.vercel.app/meta.png`,
-        alt: "Blackcrest",
+        url: "https://blackcrest.com/meta-image1.png",
+        alt: "BlackCrest Investment Opportunities",
       },
       {
-        url: `https://Blackcrest.com/meta.png`,
-        alt: "Blackcrest",
-      },
-      {
-        url: `https://www.Blackcrest.com/meta.png`,
-        alt: "Blackcrest",
+        url: "https://blackcrest.com/meta-image2.png",
+        alt: "BlackCrest Financial Growth",
       },
     ],
   },
   twitter: {
-    creator: "Blackcrest",
+    creator: "@BlackCrestInvest",
     description:
-      "Blackcrest specializes in creating tailored software solutions for non-technical clients. Our expertise transforms your vision into reality. Contact us today!",
-    title: "Blackcrest - Custom Software Solutions for Non-Technical Clients",
-    site: "https://Blackcrest.com",
+      "BlackCrest specializes in curated investment options for financial growth. Achieve steady income and long-term success with our expert solutions.",
+    title: "BlackCrest - Expert Investment Opportunities",
+    site: "@BlackCrestInvest",
     card: "summary_large_image",
     images: [
       {
-        url: `https://Blackcrest.vercel.app/meta.png`,
-        alt: "Blackcrest",
+        url: "https://blackcrest.com/meta-image1.png",
+        alt: "BlackCrest Investment Opportunities",
       },
       {
-        url: `https://Blackcrest.com/meta.png`,
-        alt: "Blackcrest",
-      },
-      {
-        url: `https://www.Blackcrest.com/meta.png`,
-        alt: "Blackcrest",
+        url: "https://blackcrest.com/meta-image2.png",
+        alt: "BlackCrest Financial Growth",
       },
     ],
   },
-  keywords: ["Investment Funds"],
+  keywords: [
+    "Investment Opportunities",
+    "Real Estate Investments",
+    "Microfinance Solutions",
+    "Business Acquisitions",
+    "Financial Growth",
+  ],
 };
 
 export default function RootLayout({
@@ -89,7 +87,7 @@ export default function RootLayout({
         <Toaster richColors position="top-right" closeButton />
         <Navbar />
         {children}
-        <FirstFooter />
+        {/* <FirstFooter /> */}
         <Footer />
       </body>
     </html>

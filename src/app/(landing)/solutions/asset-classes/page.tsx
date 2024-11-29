@@ -52,15 +52,12 @@ export default function AssetClassesPage() {
     <div className=" ">
       <section className="  ">
         <div className=" p-4 lg:p-10  max-w-screen-2xl mx-auto">
-          <h2 className=" text-3xl lg:text-6xl font-bold">
-            What are multi-asset portfolios
-          </h2>
+          <h2 className=" text-3xl lg:text-6xl font-bold">Asset classes</h2>
           <p className=" max-w-screen-md mt-6 md:mt-16 text-lg">
-            A multi-asset investment portfolio can be accomplished by investing
-            in a variety of asset classes – such as stocks, bonds, real estate,
-            credit, or cash – to create a more nimble and broadly diversified
-            portfolio. Multi-asset fund managers make big-picture decisions and
-            balance asset classes to achieve a number of investment incomes.
+            At BlackCrest, we understand that successful investing requires
+            diversification and expertise. That's why we offer a range of
+            carefully selected asset classes, each tailored to deliver robust
+            returns and align with our clients' financial goals.
           </p>
         </div>
       </section>
@@ -68,109 +65,149 @@ export default function AssetClassesPage() {
         <span className=" p-6 bg-black text-white font-semibold text-xl mb-3 block w-fit">
           KEY TAKEAWAYS
         </span>
-        <ul className=" flex flex-col lg:flex-row pb-16 border-b-2 border-b-black">
+        <ul className="  grid md:grid-cols-2 pb-16 border-b-2 border-b-black">
           <li className=" p-2 md:p-4">
-            <span className=" text-5xl font-semibold">01.</span>
-            <h3 className=" font-semibold text-xl my-4">
-              Multi-asset investing
+            <span className=" text-5xl font-semibold text-secondary">01.</span>
+            <h3 className=" font-semibold text-xl my-4 text-secondary">
+              Real Estate
             </h3>
             <p>
-              A multi-asset investment fund combines different types of asset
-              classes to create a nimble and broadly diversified portfolio.
-              Multi-asset portfolios may help you achieve a number of investment
-              outcomes
+              Real estate has long been a cornerstone of wealth creation, and at
+              BlackCrest, we offer a variety of avenues to capitalize on this
+              dynamic asset class. Whether through{" "}
+              <strong>fractional ownership</strong> of high-value properties,{" "}
+              <strong>buy-to-sell</strong>strategies for quick capital
+              appreciation, or <strong>buy-to-let</strong> options for steady
+              rental income, we provide a flexible array of opportunities.
+              Additionally, our involvement in{" "}
+              <strong>new building projects</strong> allows clients to invest in
+              emerging developments in prime, high-yield locations. From the
+              sun-soaked coasts of <strong>Marbella and Ibiza</strong> to the
+              vibrant markets of <strong>Miami, Dubai, and London</strong>
+              we specialize in premium properties that promise excellent
+              returns.
             </p>
           </li>
           <li className=" p-2 md:p-4">
-            <span className="text-5xl font-semibold">02.</span>
-            <h3 className="font-semibold text-xl my-4">
-              Benefits of multi-asset
+            <span className="text-5xl font-semibold text-secondary">02.</span>
+            <h3 className="font-semibold text-xl my-4 text-secondary">
+              Stock Market
             </h3>
             <p className="">
-              Multi-asset portfolios allow flexibility to meet investment goals
-              with broad options for investing across sectors, and more
-              diversification than other investment approaches.
+              Navigating the stock market can be complex, but with BlackCrest,
+              you gain a trusted partner. Our equity investments focus on a
+              balanced approach, encompassing <strong>blue-chip stocks</strong>{" "}
+              for stability, <strong>growth stocks</strong> for long-term
+              capital appreciation, and{" "}
+              <strong>emerging market opportunities</strong> for higher-risk,
+              high-reward ventures. We apply sophisticated analytics, market
+              trends, and a proactive management style to ensure portfolios not
+              only perform well but also align with your financial goals.
             </p>
           </li>
           <li className="p-2 md:p-4">
-            <span className="text-5xl font-semibold">03.</span>
-            <h3 className="font-semibold text-xl my-4">Choosing a portfolio</h3>
+            <span className="text-5xl font-semibold text-secondary">03.</span>
+            <h3 className="font-semibold text-xl my-4 text-secondary">
+              Microfinance/Steady Income
+            </h3>
             <p>
-              An investment portfolio that works well for one person may not be
-              the best fit for another. As with any investment decision, it's
-              important to first understand what you're trying to achieve and
-              then identify the best portfolio to get there.
+              For clients seeking consistent returns, our{" "}
+              <strong>microfinance solutions</strong> are designed to deliver
+              steady income while supporting impactful initiatives. By funding
+              small businesses, emerging entrepreneurs, and localized projects,
+              you benefit from predictable returns and the satisfaction of
+              fostering sustainable growth. This approach provides a unique
+              blend of financial stability and social impact, ensuring your
+              investments work hard for you while making a difference in the
+              world.
+            </p>
+          </li>
+          <li className="p-2 md:p-4">
+            <span className="text-5xl font-semibold text-secondary">04.</span>
+            <h3 className="font-semibold text-xl my-4 text-secondary">
+              Microfinance/Steady Income**
+            </h3>
+            <p>
+              Acquiring established businesses is a powerful way to build
+              long-term wealth. Our <strong>acquisition opportunities</strong>{" "}
+              focus on ventures with proven profitability, strong management
+              teams, and high growth potential. From small-to-medium enterprises
+              to larger corporate entities, BlackCrest identifies and
+              facilitates acquisitions that match your investment criteria. By
+              leveraging our expertise, you gain access to businesses that
+              deliver consistent cash flow, market share, and capital
+              appreciation over time.
             </p>
           </li>
         </ul>
       </section>
-      <div className={'bg-neutral-950'}>
+      {/* <div className={"bg-neutral-950"}>
+        <div className=" p-8 space-y-6 max-w-screen-2xl mx-auto">
+          <h1 className=" text-3xl md:text-5xl font-bold">
+            What are the benefits of multi-asset investment portfolios?
+          </h1>
 
-      <div className=" p-8 space-y-6 max-w-screen-2xl mx-auto">
-        <h1 className=" text-3xl md:text-5xl font-bold">
-          What are the benefits of multi-asset investment portfolios?
-        </h1>
+          <p className="text-lg max-w-screen-md">
+            Multi-asset portfolios offer enormous flexibility to meet specific
+            investment goals, with broad options for investing across securities
+            and sectors. These types of portfolios also offer more
+            diversification compared to investing solely in fixed income or
+            equity funds.
+          </p>
 
-        <p className="text-lg max-w-screen-md">
-          Multi-asset portfolios offer enormous flexibility to meet specific
-          investment goals, with broad options for investing across securities
-          and sectors. These types of portfolios also offer more diversification
-          compared to investing solely in fixed income or equity funds.
-        </p>
+          <p className="text-lg max-w-screen-md">
+            Many multi-asset funds are actively managed, which means a portfolio
+            manager and team of investors are using analysis, insights,
+            technology, and tools to make informed investment decisions.
+            Multi-asset fund managers may choose to invest more assets overseas,
+            shift assets from equities to bonds, dial back risk, or seek
+            opportunities in non-traditional asset classes – all with the
+            intention of driving better investment outcomes.
+          </p>
 
-        <p className="text-lg max-w-screen-md">
-          Many multi-asset funds are actively managed, which means a portfolio
-          manager and team of investors are using analysis, insights,
-          technology, and tools to make informed investment decisions.
-          Multi-asset fund managers may choose to invest more assets overseas,
-          shift assets from equities to bonds, dial back risk, or seek
-          opportunities in non-traditional asset classes – all with the
-          intention of driving better investment outcomes.
-        </p>
+          <div className="grid md:grid-cols-3 gap-4 md:gap-6">
+            <Card className=" border-none shadow-none">
+              <CardHeader className="p-0 mb-2">
+                <CardTitle className=" p-0">
+                  Broad, unbiased opportunities
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-0">
+                <p>
+                  Portfolios take a global investment approach and leverage a
+                  wide set of asset classes, including equities, bonds, cash,
+                  and alternatives
+                </p>
+              </CardContent>
+            </Card>
 
-        <div className="grid md:grid-cols-3 gap-4 md:gap-6">
-          <Card className=" border-none shadow-none">
-            <CardHeader className="p-0 mb-2">
-              <CardTitle className=" p-0">
-                Broad, unbiased opportunities
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="p-0">
-              <p>
-                Portfolios take a global investment approach and leverage a wide
-                set of asset classes, including equities, bonds, cash, and
-                alternatives
-              </p>
-            </CardContent>
-          </Card>
+            <Card className=" border-none shadow-none">
+              <CardHeader className="p-0 mb-2">
+                <CardTitle>Flexible, dynamic portfolios</CardTitle>
+              </CardHeader>
+              <CardContent className=" p-0">
+                <p>
+                  Portfolios combine multiple investment approaches and nimbly
+                  adapt to changing market conditions
+                </p>
+              </CardContent>
+            </Card>
 
-          <Card className=" border-none shadow-none">
-            <CardHeader className="p-0 mb-2">
-              <CardTitle>Flexible, dynamic portfolios</CardTitle>
-            </CardHeader>
-            <CardContent className=" p-0">
-              <p>
-                Portfolios combine multiple investment approaches and nimbly
-                adapt to changing market conditions
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className=" border-none shadow-none">
-            <CardHeader className=" p-0 mb-2">
-              <CardTitle>Risk-first mindset</CardTitle>
-            </CardHeader>
-            <CardContent className=" p-0">
-              <p>
-                BlackRock investors use Aladdin®, our internal risk management
-                system, to make smarter investment decisions
-              </p>
-            </CardContent>
-          </Card>
+            <Card className=" border-none shadow-none">
+              <CardHeader className=" p-0 mb-2">
+                <CardTitle>Risk-first mindset</CardTitle>
+              </CardHeader>
+              <CardContent className=" p-0">
+                <p>
+                  BlackRock investors use Aladdin®, our internal risk
+                  management system, to make smarter investment decisions
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
-      </div>
-      </div>
-      <div className="bg-black text-white py-8">
+      </div> */}
+      {/* <div className="bg-black text-white py-8">
         <div className=" p-6 mx-auto max-w-screen-2xl">
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <div className="space-y-6">
@@ -215,8 +252,8 @@ export default function AssetClassesPage() {
             </div>
           </div>
         </div>
-      </div>
-      <div className=" max-w-screen-2xl mx-auto">
+      </div> */}
+      {/* <div className=" max-w-screen-2xl mx-auto">
         <div className="max-w-3xl  p-6">
           <h1 className=" text-3xl md:text-4xl font-bold mb-6">
             Multi-asset strategies overview
@@ -237,7 +274,7 @@ export default function AssetClassesPage() {
             ))}
           </Accordion>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -23,26 +23,33 @@ interface ContentData {
 }
 
 const contentData: ContentData = {
-  "Real estate": {
-    title: "Premium European Property Investments",
-    subtitle: "High-value properties across Europe, expertly maintained to maximize long-term returns.",
+  "Real Estate": {
+    title: "Real Estate",
+    subtitle: "Invest in tangible property assets.",
     content:
-      "Our real estate portfolio invest in high end real estates across all of Europe and ensure the our properties are maintained with high standards and thus able to accrue value over time for our investors.",
+      "Harness the power of tangible assets through strategic property investments. From commercial developments to residential projects, our real estate offerings provide stability, growth potential, and a hedge against inflation.",
     image: One,
   },
-  "Microfinancing": {
-    title: "Short-Term Business Lending",
-    subtitle: "Quick liquidity solutions for businesses, with interest income for our investors.",
+  "Stock Market": {
+    title: "Stock Market",
+    subtitle: "Maximize returns through equities.",
     content:
-      "Our microfinancing portfolio focuses on providing short-term loans to businesses facing liquidity or cash flow challenges. Through these loans, we offer timely financial support to companies in critical need, while charging competitive interest rates. We have partnered with companies such as Raal La Louviere, assisting them with financing for their Whoop investment, as well as 4theplayers Academy and many other in similar need.",
+      "Our equity investments are tailored to maximize returns while managing risk. Leveraging our market expertise, we craft portfolios encompassing blue-chip stocks, emerging markets, and innovative sectors that align with your investment objectives.",
     image: Two,
   },
-  "Stocks": {
-    title: "Curated Stock & Crypto Portfolios",
-    subtitle: " Low-risk S&P 500 and expert-selected stocks with a record of high returns.",
+  Microfinance: {
+    title: "Microfinance/Steady Income",
+    subtitle: "Earn reliable income by funding growth.",
     content:
-      "Our stock and cryptocurrency investment strategy centers on the S&P 500, prioritizing low-risk assets alongside a curated selection of stocks chosen by our seasoned financial advisors. Our lead advisor, with over six years of active stock market experience, has a proven track record for identifying high-potential opportunities. In 2019, he pinpointed Nio—a Chinese electric vehicle company—when it was valued at just $1 per share; by 2021, it had surged to $60. This is just one example of the many successful investments he has directed us toward, with numerous other carefully selected stocks delivering remarkable returns",
+      "Generate reliable, steady income through our microfinance options. By funding small businesses and growth initiatives, you gain consistent returns while supporting entrepreneurship and local economies.",
     image: Three,
+  },
+  Acquisitions: {
+    title: "Acquisitions",
+    subtitle: "Own businesses with proven potential.",
+    content:
+      "Explore opportunities to acquire established businesses with proven track records. With our guidance, you’ll gain ownership of ventures poised for growth, delivering substantial long-term returns.",
+    image: Four,
   },
 };
 
@@ -63,7 +70,7 @@ const useMediaQuery = (query: string): boolean => {
 };
 
 export default function OurPurpose(): React.ReactElement {
-  const [activeTab, setActiveTab] = useState<string>("Real estate");
+  const [activeTab, setActiveTab] = useState<string>("Real Estate");
   const isMobile = useMediaQuery("(max-width: 768px)");
   const tabs = Object.keys(contentData);
 

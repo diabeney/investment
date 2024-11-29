@@ -16,24 +16,18 @@ const solutionsData = [
       "Providing tailored investment solutions for individual investors, institutions, and private clients with customized strategies that align with their financial goals.",
     icon: "fluent:people-community-24-filled",
   },
-  {
-    solution: "Insights",
-    description:
-      "Stay informed with expert market analysis, investment insights, and financial reports to help you make well-informed decisions.",
-    icon: "carbon:chart-line-data",
-  },
   // {
-  //   solution: "Investment Themes",
+  //   solution: "Insights",
   //   description:
-  //     "Identify and invest in trending themes such as technology, sustainability, and emerging markets to capitalize on future growth opportunities.",
-  //   icon: "bi:grid-3x3-gap",
+  //     "Stay informed with expert market analysis, investment insights, and financial reports to help you make well-informed decisions.",
+  //   icon: "carbon:chart-line-data",
   // },
-  {
-    solution: "Resources",
-    description:
-      "Access a wide range of resources including educational materials, research reports, and financial tools to support your investment journey.",
-    icon: "carbon:document",
-  },
+  // {
+  //   solution: "Resources",
+  //   description:
+  //     "Access a wide range of resources including educational materials, research reports, and financial tools to support your investment journey.",
+  //   icon: "carbon:document",
+  // },
 ];
 
 export default function SolutionsPage() {
@@ -58,31 +52,33 @@ export default function SolutionsPage() {
           {solutionsData.map((item) => (
             <article
               key={item.solution}
-              className=" px-2 bg-neutral-950 border-neutral-900 border pt-4 relative z-10 md:px-20 md:pt-20 bo  "
+              className=" bg-neutral-950 border-neutral-900 border relative z-10  "
             >
-              <div className=" p-5 mb-4 bg-stone-200 w-fit rounded-full">
-                <Icon icon={item.icon} className=" w-12 h-12 text-secondary" />
-              </div>
-              <h3 className=" font-bold text-2xl mb-3">{item.solution}</h3>
-              <p className=" text-neutral-50 line-clamp-4">{item.description}</p>
-              <div className="  bg-black w-full  md:w-4/5  mt-4">
-                <Button
-                  onClick={() =>
-                    router.push(
-                      `/solutions/${item.solution
-                        .replaceAll(" ", "-")
-                        .toLowerCase()}`
-                    )
-                  }
-                  className=" w-full bg-white text-black hover:opacity-80 line-clamp-1 flex text-sm  md:text-base lg:items-center text-left "
-                >
+              <div className=" p-6">
+                <div className=" p-5 mb-4 bg-stone-200 w-fit rounded-full">
                   <Icon
-                    icon={"solar:alt-arrow-right-linear"}
-                    className=" "
+                    icon={item.icon}
+                    className=" w-12 h-12 text-secondary"
                   />
-                  Learn More about {item.solution}
-                </Button>
+                </div>
+                <h3 className=" font-bold text-2xl mb-3">{item.solution}</h3>
+                <p className=" text-neutral-50 line-clamp-2">
+                  {item.description}
+                </p>
               </div>
+              <Button
+                onClick={() =>
+                  router.push(
+                    `/solutions/${item.solution
+                      .replaceAll(" ", "-")
+                      .toLowerCase()}`
+                  )
+                }
+                className=" w-full bg-white text-black hover:opacity-80 line-clamp-1 flex text-sm  md:text-base justify-start "
+              >
+                <Icon icon={"solar:alt-arrow-right-linear"} className=" " />
+                Learn More about {item.solution}
+              </Button>
             </article>
           ))}
         </section>
