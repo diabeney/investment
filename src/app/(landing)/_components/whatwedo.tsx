@@ -7,35 +7,35 @@ const whatWeDo = [
     title: "Real Estate",
     description:
       "Harness the power of tangible assets through strategic property investments. From commercial developments to residential projects, our real estate offerings provide stability, growth potential, and a hedge against inflation.",
-    icon: "mdi:home-city-outline", // Represents properties and urban investments
+    icon: "mdi:home-city-outline",
   },
   {
     id: "stock-market",
     title: "Stock Market",
     description:
       "Our equity investments are tailored to maximize returns while managing risk. Leveraging our market expertise, we craft portfolios encompassing blue-chip stocks, emerging markets, and innovative sectors that align with your investment objectives.",
-    icon: "mdi:chart-line", // Represents stock market trends and growth
+    icon: "mdi:chart-line",
   },
   {
     id: "microfinance",
     title: "Microfinance/Steady Income",
     description:
       "Generate reliable, steady income through our microfinance options. By funding small businesses and growth initiatives, you gain consistent returns while supporting entrepreneurship and local economies.",
-    icon: "mdi:hand-coin", // Represents funding and financial support
+    icon: "mdi:hand-coin",
   },
   {
     id: "acquisitions",
     title: "Acquisitions",
     description:
       "Explore opportunities to acquire established businesses with proven track records. With our guidance, you’ll gain ownership of ventures poised for growth, delivering substantial long-term returns.",
-    icon: "mdi:briefcase-outline", // Represents business acquisitions and corporate ventures
+    icon: "mdi:briefcase-outline",
   },
 ];
 
 export default function WhatWeDo() {
   return (
     <section className="  ">
-      <div className=" py-16 px-6 max-w-screen-2xl mx-auto">
+      <div className=" px-4 py-16 md:px-6 max-w-screen-2xl mx-auto">
         <h1 className=" text-3xl md:text-5xl font-extrabold max-w-screen-xl mb-4">
           BlackCrest: Investing in Tomorrow's Success
         </h1>
@@ -53,14 +53,14 @@ export default function WhatWeDo() {
             >
               <div className={"p-4 "}>
                 <div className={"px-2"}>
-                  <div className=" p-5 mb-4 bg-stone-200 w-fit rounded-full">
+                  <div className=" p-3 sm:p-5 mb-4 bg-stone-200 w-fit rounded-full">
                     <Icon
                       icon={item.icon}
-                      className=" w-12 h-12 text-secondary"
+                      className=" size-12 text-secondary"
                     />
                   </div>
                   <h3 className=" font-bold text-2xl mb-3">{item.title}</h3>
-                  <p className=" text-stone-50 line-clamp-4">
+                  <p className=" text-stone-50">
                     {item.description}
                   </p>
                 </div>

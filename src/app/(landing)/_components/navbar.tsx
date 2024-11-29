@@ -51,14 +51,14 @@ export default function Navbar() {
             <Link href={'/contact'} className=" px-6 py-2 bg-white hover:opacity-80 text-black">
               Contact Us
             </Link>
-            <Icon
-              icon={"solar:user-circle-bold"}
-              className=" h-8 w-8 text-stone-200 "
-            />
-            <Icon
-              icon={"solar:map-point-bold"}
-              className=" h-8 w-8 text-stone-200 "
-            />
+            {/*<Icon*/}
+            {/*  icon={"solar:user-circle-bold"}*/}
+            {/*  className=" h-8 w-8 text-stone-200 "*/}
+            {/*/>*/}
+            {/*<Icon*/}
+            {/*  icon={"solar:map-point-bold"}*/}
+            {/*  className=" h-8 w-8 text-stone-200 "*/}
+            {/*/>*/}
           </div>
         </nav>
       </header>

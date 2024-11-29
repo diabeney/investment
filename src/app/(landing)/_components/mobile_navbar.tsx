@@ -59,14 +59,14 @@ export default function MobileNavbar({
           <Link href={'/contact'} className=" px-6 py-2 bg-secondary text-black font-semibold">
             Contact Us
           </Link>
-          <Icon
-              icon={"solar:user-circle-bold"}
-              className=" h-8 w-8 text-stone-200 "
-          />
-          <Icon
-              icon={"solar:map-point-bold"}
-              className=" h-8 w-8 text-stone-200 "
-          />
+          {/*<Icon*/}
+          {/*    icon={"solar:user-circle-bold"}*/}
+          {/*    className=" h-8 w-8 text-stone-200 "*/}
+          {/*/>*/}
+          {/*<Icon*/}
+          {/*    icon={"solar:map-point-bold"}*/}
+          {/*    className=" h-8 w-8 text-stone-200 "*/}
+          {/*/>*/}
         </div>
       </nav>
     </header>

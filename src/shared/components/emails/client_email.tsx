@@ -27,7 +27,7 @@ export const ClientEmail = (demo: RequestReport) => (
             <Container style={container}>
                 <Section style={box} className="">
                     <Img
-                        src={`https://firebasestorage.googleapis.com/v0/b/botr-774c8.appspot.com/o/assets%2Flogo_dark.png?alt=media&token=23684fe4-9ab0-467a-a193-76c085b78972`}
+                        src={`https://ik.imagekit.io/i7gyrkpch/logo_dark.png?updatedAt=1732914626416`}
                         width="150"
                         height="50"
                         alt="Stripe"
@@ -73,7 +73,7 @@ export const ClientEmail = (demo: RequestReport) => (
                         you on your investment journey.
                     </Text>
                     <Text style={paragraph}>Best regards,</Text>
-                    <Text style={paragraph}>The Blackcrest Team</Text>
+                    <Text style={paragraph}>The BlackCrest Team</Text>
                 </Section>
             </Container>
         </Body>

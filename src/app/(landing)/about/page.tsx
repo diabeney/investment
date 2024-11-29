@@ -8,8 +8,8 @@ export default function AboutPage() {
     <div>
       <AboutWhoWeAre />
       <OurPurpose />
-      <OurPeople />
-      <Quote />
+      {/*<OurPeople />*/}
+      {/*<Quote />*/}
     </div>
   );
 }

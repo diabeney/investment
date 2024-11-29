@@ -9,7 +9,6 @@ import {
   Calendar,
   ChevronLeft,
   ChevronRight,
-  Divide,
 } from "lucide-react";
 import ClientSideRoutes from "./client_side_routes";
 import { Button } from "@/shared/components/ui/button";
@@ -43,7 +42,7 @@ export default function BlogList({ posts, baseUrl = "news" }: Props) {
 
   return (
     <div className=" ">
-      <div className="md:px-10 px-6 max-w-screen-2xl  mx-auto py-12">
+      <div className="md:px-10 px-4 max-w-screen-2xl  mx-auto py-12">
         <section className=" max-w-screen-lg mb-6">
           <h1 className=" text-3xl lg:text-6xl font-bold mb-3">
             Our news and events

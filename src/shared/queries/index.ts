@@ -12,8 +12,8 @@ import { client } from "@/sanity/lib/client";
 
 const getPosts = async () => {
   try {
-    const posts = await client.fetch(Posts, {}, { next: { revalidate: 1 } });
-    return posts;
+    return await client.fetch(Posts, {}, { next: { revalidate: 1 } });
+
   } catch (error) {
     if (error instanceof Error) {
       console.error(error.message);
@@ -23,8 +23,8 @@ const getPosts = async () => {
 
 const getSinglePostsMetadata = async (slug: string) => {
   try {
-    const metadata = await client.fetch(SinglePostsMetadata, { slug });
-    return metadata;
+    return await client.fetch(SinglePostsMetadata, { slug });
+
   } catch (error) {
     if (error instanceof Error) {
       console.error(error.message);

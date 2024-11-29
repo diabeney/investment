@@ -4,10 +4,10 @@ import React, { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader } from "@/shared/components/ui/card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
-import One from "@/app/assets/one.jpg";
-import Two from "@/app/assets/two.jpg";
-import Three from "@/app/assets/three.jpg";
-import Four from "@/app/assets/four.jpg";
+import One from "@/app/assets/real estate.jpg";
+import Two from "@/app/assets/stock market.jpg";
+import Three from "@/app/assets/microfinance.jpg";
+import Four from "@/app/assets/acquisition.jpg";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
 
@@ -88,13 +88,13 @@ export default function OurPurpose(): React.ReactElement {
 
   return (
     <div className="  bg-neutral-950 ">
-      <div className="p-4 lg:p-12 max-w-screen-2xl mx-auto">
-        <span>
+      <div className="lg:p-12 max-w-screen-2xl mx-auto">
+        <div className={'block pl-4 pt-4'}>
           <h3 className=" font-semibold">WHAT WE DO</h3>
           <span className=" h-1 w-10 bg-secondary block" />
-        </span>
+        </div>
         <div className="flex flex-col md:flex-row py-6">
-          <nav className={`${isMobile ? "w-full overflow-x-auto" : "w-64"}`}>
+          <nav className={`${isMobile ? "w-full overflow-x-auto" : "w-64"} pl-4`}>
             <ul className={`${isMobile ? "flex space-x-4" : "space-y-2"}`}>
               {tabs.map((item) => (
                 <li key={item} className={isMobile ? "flex-shrink-0" : ""}>
@@ -103,7 +103,7 @@ export default function OurPurpose(): React.ReactElement {
                     className={`whitespace-nowrap text-left py-2 rounded transition-colors ${
                       activeTab === item
                         ? " text-secondary font-semibold"
-                        : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                        : "text-muted-foreground  hover:text-secondary/60"
                     }`}
                   >
                     {item}
@@ -117,11 +117,11 @@ export default function OurPurpose(): React.ReactElement {
               <CardHeader className="flex flex-row items-center justify-between">
                 {isMobile && (
                   <div className="flex space-x-2">
-                    <Button variant="outline" size="icon" onClick={handlePrev}>
+                    <Button variant="outline" size="icon" className={'p-2.5 rounded-full'} onClick={handlePrev}>
                       <ChevronLeft className="h-4 w-4" />
                       <span className="sr-only">Previous</span>
                     </Button>
-                    <Button variant="outline" size="icon" onClick={handleNext}>
+                    <Button variant="outline" size="icon" className={'p-2.5 rounded-full'} onClick={handleNext}>
                       <ChevronRight className="h-4 w-4" />
                       <span className="sr-only">Next</span>
                     </Button>

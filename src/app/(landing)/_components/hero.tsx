@@ -1,24 +1,28 @@
+'use client'
+
 import Image from "next/image";
 import HeroImage from "@/app/assets/shubham-dhage-URCKNCgZ9PA-unsplash.jpg";
 import { Button } from "@/shared/components/ui/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import {useRouter} from "next/navigation";
 export default function HeroSection() {
+  const router = useRouter()
   return (
     <div className=" max-w-screen-2xl mx-auto grid lg:grid-cols-2 place-items-center h-full lg:max-h-[600px]">
-      <section className=" p-6">
+      <section className=" p-4 md:p-6">
         <h1 className="  text-5xl lg:text-6xl mt-3 lg:mt-0 font-bold">
           Empowering your <span className=" text-secondary">financial</span>{" "}
           future.
         </h1>
         <p className=" md:text-lg my-6">
-          At Investico Inc., we are dedicated to helping you grow and protect
+          At BlackCrest, we are dedicated to helping you grow and protect
           your wealth. With personalized investment strategies and a commitment
           to delivering long-term value, we guide you on the path to financial
           success. Whether you're looking to build your portfolio, plan for
           retirement, or explore new opportunities, our expert advisors are here
           to help you achieve your goals and secure your future.
         </p>
-        <Button className=" btn flex bg-white text-black hover:opacity-80">
+        <Button onClick={() => router.push('/about')} className=" btn flex bg-white text-black hover:opacity-80">
           Read our story
           <Icon icon="solar:arrow-right-up-bold-duotone" className="ml-3" />
         </Button>
