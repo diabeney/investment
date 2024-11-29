@@ -125,7 +125,7 @@ export default function AssetClassesPage() {
           <li className="p-2 md:p-4">
             <span className="text-5xl font-semibold text-secondary">04.</span>
             <h3 className="font-semibold text-xl my-4 text-secondary">
-              Microfinance/Steady Income**
+              Acquisition
             </h3>
             <p>
               Acquiring established businesses is a powerful way to build

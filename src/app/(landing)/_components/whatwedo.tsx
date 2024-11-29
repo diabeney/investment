@@ -65,13 +65,13 @@ export default function WhatWeDo() {
                   </p>
                 </div>
               </div>
-              <button className=" btn items-center font-semibold gap-2 pl-4 w-full mt-3 text-black bg-white hover:opacity-80 line-clamp-1 text-sm md:text-base flex ">
+              {/* <button className=" btn items-center font-semibold gap-2 pl-4 w-full mt-3 text-black bg-white hover:opacity-80 line-clamp-1 text-sm md:text-base flex ">
                 <Icon
                   icon={"solar:alt-arrow-right-linear"}
                   className=" text-black"
                 />
                 Learn More about {item.title.replace(/\/\w+/g, "")}
-              </button>
+              </button> */}
             </article>
           ))}
         </section>
