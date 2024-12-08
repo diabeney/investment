@@ -52,7 +52,7 @@ export default function Footer() {
             <Image src={Logo} alt={"logo"} width={300} className={"h-full w-full object-cover object-top "} />
           </div>
           <h2 className="text-4xl font-bold mb-4">{footerData.company.name}</h2>
-          <p className="text-sm leading-relaxed">{footerData.company.description}</p>
+          <p className="leading-relaxed">{footerData.company.description}</p>
         </div>
         <div className="md:w-1/2 md:pl-8 md:border-l border-stone-700">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
