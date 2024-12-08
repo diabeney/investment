@@ -55,14 +55,7 @@ export const solutionsData = {
       sections: [
         {
           title: "ASSET CLASSES",
-          links: [
-            "Alternative investments",
-            "Fundamental Equities",
-            "Investment trusts",
-            "Multi-Asset",
-            "Systematic investing",
-            "Alternatives",
-          ],
+          links: ["Alternative investments", "Fundamental Equities", "Investment trusts", "Multi-Asset", "Systematic investing", "Alternatives"],
         },
         {
           title: "CLIENTS",
@@ -70,36 +63,15 @@ export const solutionsData = {
         },
         {
           title: "INSIGHTS",
-          links: [
-            "Investment Education",
-            "Market insights",
-            "Newsroom",
-            "Public policy",
-            "Stock Market Monitor",
-            "The Bid Podcast",
-            "People & Money",
-          ],
+          links: ["Investment Education", "Market insights", "Newsroom", "Public policy", "Stock Market Monitor", "The Bid Podcast", "People & Money"],
         },
         {
           title: "INVESTMENT THEMES",
-          links: [
-            "MyMap range",
-            "Portfolio ETFs",
-            "Retirement",
-            "Sustainable and transition",
-            "investing",
-            "Thematic investing",
-          ],
+          links: ["MyMap range", "Portfolio ETFs", "Retirement", "Sustainable and transition", "investing", "Thematic investing"],
         },
         {
           title: "RESOURCES",
-          links: [
-            "How to invest",
-            "Jargon buster",
-            "Literature",
-            "Sustainability Disclosure",
-            "Regulatory Data Templates",
-          ],
+          links: ["How to invest", "Jargon buster", "Literature", "Sustainability Disclosure", "Regulatory Data Templates"],
         },
       ],
     },
@@ -121,16 +93,12 @@ export const solutionsData = {
         },
         {
           title: "CLIENTS",
-          links: [
-            "Family offices",
-            "Institutional investor",
-            "Wealth managers",
-          ],
+          links: ["Family offices", "Institutional investor", "Wealth managers"],
         },
         {
           title: "INSIGHTS",
           links: [
-            "BlackRock Investment Institute",
+            "BlackCrest Investment Institute",
             "Media hub",
             "Quarterly investment themes",
             "Events Hub",
@@ -143,24 +111,11 @@ export const solutionsData = {
         },
         {
           title: "INVESTMENT SPOTLIGHT",
-          links: [
-            "It's a Fixed Income Era",
-            "MyMap range",
-            "Thematic investing",
-            "Unconstrained equity investing",
-            "When equity markets are in flux, flex",
-          ],
+          links: ["It's a Fixed Income Era", "MyMap range", "Thematic investing", "Unconstrained equity investing", "When equity markets are in flux, flex"],
         },
         {
           title: "RESOURCES",
-          links: [
-            "Contact us",
-            "How to invest",
-            "Library",
-            "Library for institution",
-            "Public policy",
-            "Reporting fund status",
-          ],
+          links: ["Contact us", "How to invest", "Library", "Library for institution", "Public policy", "Reporting fund status"],
         },
         {
           title: "SERVICES",

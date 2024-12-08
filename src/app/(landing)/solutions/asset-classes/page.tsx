@@ -1,17 +1,7 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/shared/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/shared/components/ui/card";
 import Image from "next/image";
 import One from "@/app/assets/one.jpg";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/shared/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/shared/components/ui/accordion";
 import { ChevronDown } from "lucide-react";
 
 const faqItems = [
@@ -31,9 +21,9 @@ const faqItems = [
       "Investing in multi-asset portfolios can help spread risk, potentially enhance returns, and provide a buffer against market volatility by diversifying across different asset classes.",
   },
   {
-    question: "What is BlackRock's investment strategy?",
+    question: "What is Blackcrest's investment strategy?",
     answer:
-      "BlackRock's investment strategy focuses on providing a wide range of investment solutions, including multi-asset portfolios, to help clients achieve their financial goals through diversification, risk management, and innovative investment approaches.",
+      "Blackcrest's investment strategy focuses on providing a wide range of investment solutions, including multi-asset portfolios, to help clients achieve their financial goals through diversification, risk management, and innovative investment approaches.",
   },
   {
     question: "What is a multi-asset class?",
@@ -54,89 +44,54 @@ export default function AssetClassesPage() {
         <div className=" p-4 lg:p-10  max-w-screen-2xl mx-auto">
           <h2 className=" text-3xl lg:text-6xl font-bold">Asset classes</h2>
           <p className=" max-w-screen-md mt-6 md:mt-16 text-lg">
-            At BlackCrest, we understand that successful investing requires
-            diversification and expertise. That's why we offer a range of
-            carefully selected asset classes, each tailored to deliver robust
-            returns and align with our clients' financial goals.
+            At BlackCrest, we understand that successful investing requires diversification and expertise. That's why we offer a range of carefully selected
+            asset classes, each tailored to deliver robust returns and align with our clients' financial goals.
           </p>
         </div>
       </section>
       <section className=" p-4 md:p-6 max-w-screen-2xl mx-auto">
-        <span className=" p-6 bg-black text-white font-semibold text-xl mb-3 block w-fit">
-          KEY TAKEAWAYS
-        </span>
+        <span className=" p-6 bg-black text-white font-semibold text-xl mb-3 block w-fit">KEY TAKEAWAYS</span>
         <ul className="  grid md:grid-cols-2 pb-16 border-b-2 border-b-black">
           <li className=" p-2 md:p-4">
             <span className=" text-5xl font-semibold text-secondary">01.</span>
-            <h3 className=" font-semibold text-xl my-4 text-secondary">
-              Real Estate
-            </h3>
+            <h3 className=" font-semibold text-xl my-4 text-secondary">Real Estate</h3>
             <p>
-              Real estate has long been a cornerstone of wealth creation, and at
-              BlackCrest, we offer a variety of avenues to capitalize on this
-              dynamic asset class. Whether through{" "}
-              <strong>fractional ownership</strong> of high-value properties,{" "}
-              <strong>buy-to-sell</strong>strategies for quick capital
-              appreciation, or <strong>buy-to-let</strong> options for steady
-              rental income, we provide a flexible array of opportunities.
-              Additionally, our involvement in{" "}
-              <strong>new building projects</strong> allows clients to invest in
-              emerging developments in prime, high-yield locations. From the
-              sun-soaked coasts of <strong>Marbella and Ibiza</strong> to the
-              vibrant markets of <strong>Miami, Dubai, and London</strong>
-              we specialize in premium properties that promise excellent
-              returns.
+              Real estate has long been a cornerstone of wealth creation, and at BlackCrest, we offer a variety of avenues to capitalize on this dynamic asset
+              class. Whether through <strong>fractional ownership</strong> of high-value properties, <strong>buy-to-sell</strong>strategies for quick capital
+              appreciation, or <strong>buy-to-let</strong> options for steady rental income, we provide a flexible array of opportunities. Additionally, our
+              involvement in <strong>new building projects</strong> allows clients to invest in emerging developments in prime, high-yield locations. From the
+              sun-soaked coasts of <strong>Marbella and Ibiza</strong> to the vibrant markets of <strong>Miami, Dubai, and London</strong>
+              we specialize in premium properties that promise excellent returns.
             </p>
           </li>
           <li className=" p-2 md:p-4">
             <span className="text-5xl font-semibold text-secondary">02.</span>
-            <h3 className="font-semibold text-xl my-4 text-secondary">
-              Stock Market
-            </h3>
+            <h3 className="font-semibold text-xl my-4 text-secondary">Stock Market</h3>
             <p className="">
-              Navigating the stock market can be complex, but with BlackCrest,
-              you gain a trusted partner. Our equity investments focus on a
-              balanced approach, encompassing <strong>blue-chip stocks</strong>{" "}
-              for stability, <strong>growth stocks</strong> for long-term
-              capital appreciation, and{" "}
-              <strong>emerging market opportunities</strong> for higher-risk,
-              high-reward ventures. We apply sophisticated analytics, market
-              trends, and a proactive management style to ensure portfolios not
-              only perform well but also align with your financial goals.
+              Navigating the stock market can be complex, but with BlackCrest, you gain a trusted partner. Our equity investments focus on a balanced approach,
+              encompassing <strong>blue-chip stocks</strong> for stability, <strong>growth stocks</strong> for long-term capital appreciation, and{" "}
+              <strong>emerging market opportunities</strong> for higher-risk, high-reward ventures. We apply sophisticated analytics, market trends, and a
+              proactive management style to ensure portfolios not only perform well but also align with your financial goals.
             </p>
           </li>
           <li className="p-2 md:p-4">
             <span className="text-5xl font-semibold text-secondary">03.</span>
-            <h3 className="font-semibold text-xl my-4 text-secondary">
-              Microfinance/Steady Income
-            </h3>
+            <h3 className="font-semibold text-xl my-4 text-secondary">Microfinance/Steady Income</h3>
             <p>
-              For clients seeking consistent returns, our{" "}
-              <strong>microfinance solutions</strong> are designed to deliver
-              steady income while supporting impactful initiatives. By funding
-              small businesses, emerging entrepreneurs, and localized projects,
-              you benefit from predictable returns and the satisfaction of
-              fostering sustainable growth. This approach provides a unique
-              blend of financial stability and social impact, ensuring your
-              investments work hard for you while making a difference in the
-              world.
+              For clients seeking consistent returns, our <strong>microfinance solutions</strong> are designed to deliver steady income while supporting
+              impactful initiatives. By funding small businesses, emerging entrepreneurs, and localized projects, you benefit from predictable returns and the
+              satisfaction of fostering sustainable growth. This approach provides a unique blend of financial stability and social impact, ensuring your
+              investments work hard for you while making a difference in the world.
             </p>
           </li>
           <li className="p-2 md:p-4">
             <span className="text-5xl font-semibold text-secondary">04.</span>
-            <h3 className="font-semibold text-xl my-4 text-secondary">
-              Acquisition
-            </h3>
+            <h3 className="font-semibold text-xl my-4 text-secondary">Acquisition</h3>
             <p>
-              Acquiring established businesses is a powerful way to build
-              long-term wealth. Our <strong>acquisition opportunities</strong>{" "}
-              focus on ventures with proven profitability, strong management
-              teams, and high growth potential. From small-to-medium enterprises
-              to larger corporate entities, BlackCrest identifies and
-              facilitates acquisitions that match your investment criteria. By
-              leveraging our expertise, you gain access to businesses that
-              deliver consistent cash flow, market share, and capital
-              appreciation over time.
+              Acquiring established businesses is a powerful way to build long-term wealth. Our <strong>acquisition opportunities</strong> focus on ventures
+              with proven profitability, strong management teams, and high growth potential. From small-to-medium enterprises to larger corporate entities,
+              BlackCrest identifies and facilitates acquisitions that match your investment criteria. By leveraging our expertise, you gain access to businesses
+              that deliver consistent cash flow, market share, and capital appreciation over time.
             </p>
           </li>
         </ul>
@@ -199,7 +154,7 @@ export default function AssetClassesPage() {
               </CardHeader>
               <CardContent className=" p-0">
                 <p>
-                  BlackRock investors use Aladdin®, our internal risk
+                  Blackcrest investors use Aladdin®, our internal risk
                   management system, to make smarter investment decisions
                 </p>
               </CardContent>
@@ -212,11 +167,11 @@ export default function AssetClassesPage() {
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <div className="space-y-6">
               <h1 className=" text-3xl md:text-4xl font-bold">
-                Why choose BlackRock for multi-asset portfolios?
+                Why choose Blackcrest for multi-asset portfolios?
               </h1>
 
               <p className="text-xl">
-                BlackRock offers a wide range of multi-asset solutions to help
+                Blackcrest offers a wide range of multi-asset solutions to help
                 you achieve your investment goals, no matter what they may be.
               </p>
 
@@ -232,7 +187,7 @@ export default function AssetClassesPage() {
                 <div>
                   <h2 className="text-2xl font-semibold mb-2">Scale</h2>
                   <p>
-                    We leverage the full breadth of BlackRock's experience,
+                    We leverage the full breadth of Blackcrest's experience,
                     expertise, and <span className="font-bold">technology</span>
                   </p>
                 </div>
